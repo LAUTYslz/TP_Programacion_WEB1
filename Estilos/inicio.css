@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+/* h1{font-family: 'Josefin Sans', sans-serif;} */
+
+*{
+    box-sizing: border-box; 
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin: 0; */
+}
+
+body{
+    background-color: #1F1F22;
+    color: white;
+}
+
+h2{font-size: 45px;}
+
+p{font-size: 25px;}
+
+a{text-decoration: none;}
+
+hr{ height: 2px; border-color: #534e54;}
+
+/*------------------------------- HEADER nav ---------------------------------*/
+nav{display: flex; justify-content: space-between; height:50px; margin: 20px 20px;}
+nav span{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
+nav #nav_cat{display: flex; justify-content: space-around; width: 700px; align-items:center;}
+nav a{font-size: 20px; color: #fff;}
+
+#carrito_buscador input{border-radius: 20px; width: 300px; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height: 30px;}
+#carrito_buscador{ display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 25%;}
+#carrito{ display: flex;flex-direction: row; align-items: center;}
+#carrito img {height: 40px;}
+#carrito p {color: #fff; background-color: #DC8DF2; line-height: 30px; border-radius: 50%; font-size: 25px; height: 25px; width: 25px; text-align: center;}
+
+
+
+/*---------------------------------- MAIN-------------------------------------*/
+
+
+main{width: 70%; margin: auto;}
+/* Titulo */
+#Titulo{text-align: center; color: #fff; margin: 250px 0;}
+#Titulo h1{font-size: 70px; margin:0 0 30px}
+#Titulo p{font-size: 20px;}
+#Titulo button{height: 60px;width: 190px; border-radius: 6px; background-color: #E2F26B; margin-top: 40px; font-size: 15px; font-weight: 500;}
+#Titulo button:hover{background-color: #e2f26be6; cursor: pointer;}
+
+/*Categorias*/
+#Categorias {height: auto;margin: 100px 0;}
+#Categorias div{display: flex; justify-content:space-between; align-items: flex-start; margin: 0;}
+#Categorias .buttons_cat{width: 180px; height: 60px; box-shadow: 0 -3px 20px #A79BF2; background-color: #DC8DF2;border-radius: 6px; border-color: #534e54;
+    /* background-image: linear-gradient(to right bottom, #DC8DF2,#59aff5); */
+cursor: pointer;}
+#Categorias .buttons_cat:hover{background: #dc8df2ca;}
+#Categorias a{color: #fff}
+
+/*  Carrousel */
+#carrousel img { border-radius: 10px; height: 400px;}
+#carrousel { display: flex; justify-content: center;}
+
+/* Escuelas */
+#Escuelas{ border: 3px solid #E2F26B; text-align: center; margin: 120px 0;}
+#Escuelas hr{width: 70%; border-color: #E2F26B;}
+#Escuelas .img_escuelas{height: 150px}
+
+/* Exp aprendizaje */
+#Experiencia_aprendizaje{display: flex; justify-content: space-between; margin: 150px 0; align-items: center;}
+#Experiencia_aprendizaje h2{color: #E2F26B;}
+#Experiencia_aprendizaje img{border-radius: 10px ; height: 300px;}
+#Experiencia_aprendizaje li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+
+/* Career Advisor */
+#Carrer_advisor{display: flex; justify-content: space-between; margin: 150px 0; align-items:start;}
+#Carrer_advisor img{border-radius: 10px ; height: 300px;}
+#Carrer_advisor h2{color: #E2F26B;}
+#Carrer_advisor li{font-size: 20px; font-weight: 300; margin-top: 10px;}
+
+/* Estadistica */
+#Estadistica{display: flex; justify-content: space-around; align-items: center; text-align: center; color: #DC8DF2; margin: 200px 0;}
+#Estadistica div{border: 3px solid #DC8DF2; height: 250px; width: 250px;  border-radius: 30px 30px 80px 30px; box-shadow: -15px -15px #83AAF7}
+#Estadistica h2{line-height: 120px;height: 50px;}
+#Estadistica hr{width: 70%; height: 2px; border-color: #DC8DF2;}
+
+/* Garantia */
+#Garantia{display: flex; justify-content: space-between; margin: 150px 0; align-items: center;}
+#Garantia h2{color: #E2F26B;}
+#Garantia img{border-radius: 10px ; height: 300px;}
+#Garantia li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+
+
+/* Botones flotantes */
+#Botones_flotantes{position: fixed; z-index: 1; top: 92%; left: 88%;  }
+#Botones_flotantes img{height: 60px; border-radius: 50%;}
+#Botones_flotantes img:nth-child(1){background-color: #E2F26B; padding: 10px;}
+#Botones_flotantes img:nth-child(3){background-color: #9337ef; padding: 15px;}
+#Botones_flotantes img:hover{cursor: pointer;}
+
+/* Pasos a seguir */
+#Pasos h2{color: #E2F26B;}
+#Pasos li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+
+/* Cursos destacados */
+#Destacados {margin-top: 150px; margin-bottom: 100px;}
+
+#Destacados h2{color: #E2F26B; margin-bottom: 50px;}
+
+#Cursos_destacados {display: flex; justify-content: space-between;}
+
+#Cursos_destacados .destacados {background-color: #2B2C32; height: 300px; width: 20%; padding: 30px; border-radius: 5px; }
+
+#Cursos_destacados .destacados h3{color: #fff; font-size: 30px; font-weight: 500; margin: 0;}
+#Cursos_destacados .destacados p{font-size: 10px; color: #acacac; line-height: 20px;}
+#Cursos_destacados .destacados span{font-weight: 700;}
+#Cursos_destacados .destacados img {height: 10px;}
+
+#Cursos_destacados .destacados button {height: 50px; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 5px; color: #E2F26B;}
+#Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer;}
+#Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
+
+.datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}
+.precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+
+/* Medios de pago */
+#Medios_pago{ background-color: #2B2C32 ; margin: 120px 0; display: flex; justify-content: center; flex-direction: row; height: 150px}
+
+#texto {display: flex;flex-direction: row; justify-content: end; align-items: center; width: 40%;}
+#texto h4{border-right: 1px solid #acacac; padding-right: 10px; font-size: 20px;}
+#texto p {font-size: 12px; padding-left: 10px;}
+
+#img_pago{display: flex; width: 40%; align-items: center; justify-content: center;} 
+#img_pago img{height: 20px; }
+
+
+/* --------------------------------FOOTER------------------------------------ */
+/* footer hr{width: 100% !important;} */
+footer {width: 70%; margin: auto;}
+/* Redes */
+/* Colores de los iconos cambiados desde svg */
+#redes{display: flex;align-items: center;justify-content: space-between;}
+#redes h2{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
+#redes div{display: flex; justify-content: space-around; align-items: center;width: 40%;}
+#redes .img_footer{height: 30px;}
+#redes .img_footer:hover{cursor: pointer;}
+
+/* links */
+#links_footer{display: flex; width: 40%;margin: 0 0 80px 0; justify-content: space-between;}
+#links_footer div{display: flex;flex-direction: column;}
+#links_footer h3{font-size: 14px; margin: 7px 0;}
+#links_footer a{color: #83AAF7; margin: 7px 0;}
+
+/* ayuda */
+#ayuda{text-align: center;}
