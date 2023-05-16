@@ -41,7 +41,7 @@
 .formulario_inscripcion input:focus {
     transform: scale(1.1);
     transition-duration: 0.5s;
-    background-color: #64df00;
+    background-color: #d5ffca;
 }
 
 .formulario_inscripcion div {
@@ -59,10 +59,10 @@
     margin-top: 10px;
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 22px;
 }
-.p__bloque-agregar-persona{  position: relative; right: 322px;}
-.p__bloque-inscribisrse{position: relative;right: 274px;}
+.p__bloque-agregar-persona{  position: relative; right: 312px;}
+.p__bloque-inscribisrse{position: relative;right: 264px;}
 
 .inscribirse {
     background-color: rgb(0 179 255);
@@ -75,8 +75,7 @@
 
 .inscribirse:hover {
     cursor: pointer;
-    translate: 15px 5px;
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition-duration: 0.7s;
 }
 
