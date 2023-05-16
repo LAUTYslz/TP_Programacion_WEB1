@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace&display=swap');
+
+/* h1{font-family: 'Josefin Sans', sans-serif;} */
+
+*{
+    box-sizing: border-box; 
+    font-family: 'Josefin Sans', sans-serif;
+    /* margin: 0; */
+}
+
+body{
+    background-color: #1F1F22;
+    color: white;
+}
+
+p{font-size: 25px;}
+
+a{text-decoration: none;}
+
+hr{ height: 2px; border-color: #534e54;}
+
+h2{font-size: 45px;}
+
+/*------------------------------- HEADER nav ---------------------------------*/
+nav{display: flex; justify-content: space-between; height:50px; margin: 20px 20px;}
+nav span{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
+nav #nav_cat{display: flex; justify-content: space-around; width: 700px; align-items:center;}
+nav a{font-size: 20px; color: #fff;}
+
+#carrito_buscador input{border-radius: 20px; width: 300px; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height: 30px;}
+#carrito_buscador{ display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 25%;}
+#carrito{ display: flex;flex-direction: row; align-items: center;}
+#carrito img {height: 40px;}
+#carrito p {color: #fff; background-color: #DC8DF2; line-height: 30px; border-radius: 50%; font-size: 25px; height: 25px; width: 25px; text-align: center;}
+
+/*---------------------------------- MAIN-------------------------------------*/
+
+main{width: 70%; margin: auto;}
+
+/* --------------------------------FOOTER------------------------------------ */
+/* footer hr{width: 100% !important;} */
+footer {width: 70%; margin: auto;}
+/* Redes */
+/* Colores de los iconos cambiados desde svg */
+#redes{display: flex;align-items: center;justify-content: space-between;}
+#redes h2{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
+#redes div{display: flex; justify-content: space-around; align-items: center;width: 40%;}
+#redes .img_footer{height: 30px;}
+#redes .img_footer:hover{cursor: pointer;}
+
+/* links */
+#links_footer{display: flex; width: 40%;margin: 0 0 80px 0; justify-content: space-between;}
+#links_footer div{display: flex;flex-direction: column;}
+#links_footer h3{font-size: 14px; margin: 7px 0;}
+#links_footer a{color: #83AAF7; margin: 7px 0;}
+
+/* ayuda */
+#ayuda{text-align: center;}

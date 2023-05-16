@@ -1,0 +1,25 @@
+
+/* Formulario */
+
+h1{color: #fff; font-size: 70px; margin: 80px 0;}
+
+#formulario {display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 100px;}
+
+form{display: flex; flex-direction: column; width: 40%;}
+
+#formulario input{ width: 70%; height: 3em; border-radius: 10px; margin-bottom: 30px;}
+#formulario button{ width: 30%; height: 2em; border-radius: 10px; color: #DC8DF2; font-size: 20px; margin-top: 30px;}
+#formulario button:hover{cursor: pointer; background-color: #E2F26B;}
+
+label { font-size: 25px; color: #DC8DF2;}
+
+textarea{border-radius: 10px;}
+
+/* Mapa */
+
+h2{color: #E2F26B;}
+#ubicacion {display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 100px;}
+#ubicacion iframe{width: 70%;}
+
+
+
