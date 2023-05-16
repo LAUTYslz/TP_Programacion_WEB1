@@ -1,0 +1,114 @@
+/* /////////////// Estilos y clases INSCRIPCIÓN /////////////// */
+
+.seccion_inscripcion {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+    width: 100%;
+}
+
+.titulos h1 {
+    width: 50%;
+    padding-left: 25px;
+    text-transform: uppercase;
+    font-size: 30px;
+    margin: 50px 0px 20px 0px;
+}
+
+.titulos h2 {
+    width: 30%;
+    padding-left: 27px;
+    margin: 30px 0px 10px 0px;
+    font-size: 30px;
+}
+
+.formulario_inscripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+
+.formulario_inscripcion input {
+    font-size: x-large;
+    border-radius: 8px;
+    border: 2px solid white;
+    padding: 8px;
+    outline: none;
+}
+
+.formulario_inscripcion input:focus {
+    transform: scale(1.1);
+    transition-duration: 0.5s;
+    background-color: #64df00;
+}
+
+.formulario_inscripcion div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+
+.formulario_inscripcion p {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.p__bloque-agregar-persona{  position: relative; right: 322px;}
+.p__bloque-inscribisrse{position: relative;right: 274px;}
+
+.inscribirse {
+    background-color: rgb(0 179 255);
+    font-family: inherit;
+    font-size: x-large;
+    padding: 7px;
+    border-radius: 10px;
+    border: 2px solid rgb(103 173 224);
+}
+
+.inscribirse:hover {
+    cursor: pointer;
+    translate: 15px 5px;
+    transform: scale(1.2);
+    transition-duration: 0.7s;
+}
+
+.quitar {
+    font-size: initial;
+    background-color: rgb(255, 14, 14);
+    color: white;
+    border-radius: 50%;
+    padding: 1px;
+}
+
+.quitar:hover {
+    transform: rotate(180deg);
+    background-color: #333;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+
+.mas {
+    font-size: xx-large;
+    background-color: rgb(102, 255, 14);
+    color: #333;
+    border-radius: 50%;
+    padding: 1px;
+    border: 2px solid black;
+    box-shadow: 2px 2px 5px black;
+}
+
+.mas:hover {
+    transform: rotate(180deg);
+    background-color: yellow;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
