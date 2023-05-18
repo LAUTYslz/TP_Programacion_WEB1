@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --color-azul: #305ffd;
+    --color-celeste:#55d1ea;
+    --color-violeta:#ae54c6;
+    --color-naranja:#deb63f;
+    --color-amarillo:#ebe548;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    width: 70%;
+    margin: auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+section{
+    width: calc(50% - 20px);
+    box-sizing: border-box;
+}
+
+/* SECTION LEFT----- SECTION-UNO*/
+
+.conteiner-imagen{  
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.conteiner-giftCard{
+    background: url(../img/fondo03.png);
+    width:350px;
+    height: 350px;
+}
+.texto{text-align: center;margin:20px 20px}
+
+/* SECTION RIGTH */
+
+.sectionDos {
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+    width: 30%;
+}
+
+
+.article-flex{display: flex;flex-direction: column; gap:5px;}
+
+.conteiner-colores{
+    display: flex;
+    gap:20px;
+}
+
+.circulo__conteiner-colores{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+.circulo-azul{background-color: var(--color-azul);}
+.circulo-celeste{background-color: var(--color-celeste);}
+.circulo-violeta{background-color: var(--color-violeta);}
+.circulo-naranja{background-color: var(--color-naranja);}
+.circulo-amarillo{background-color: var(--color-amarillo);}
+
+.conteiner-pixeles{
+    display: flex;
+    gap:20px;
+}
+
+.conteiner-ubicacion{display:flex;gap: 20px;}
+.cuadrado{width: 40px;height: 40px; border: 1px solid  ;position: relative;}
+.rectangulo{width: 20px;height: 10px;background-color: var(--color-naranja);}
+.rectanguloAbajoDerecha{position: absolute;bottom: 0;right: 0;}
+.rectanguloArribaIzquierda{position: absolute;top:0;left:0}
+.rectanguloArribaDerecha{position: absolute;top:0;right: 0;}
+
+.fondos{display: flex;gap:20px;}
+.fondo{width: 40px;height: 40px;}
+.fondo1{background: url(../img/fondo03.png) no-repeat;}
+.fondo2{background: url(../img/fondo04.png) no-repeat;}
+.fondo3{background: url(../img/fondo05.png) no-repeat;}
+.fondo4{background: url(../img/fondo06.png) no-repeat;}
+.fondo5{background: url(../img/fondo07.png) no-repeat;}
+
+article a{
+    text-decoration: none;
+    background-color:#3097fd;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#monto{padding: 5px; font-size: 15px;}
+#nombre{padding: 5px;font-size: 15px;}
+span{font-size: 20px;}

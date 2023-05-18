@@ -4,61 +4,144 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="Estilos/giftcard.css">
+    <title>Giftcart</title>
 </head>
 <body>
     <header class="header"></header>
 
     <main class="main">
         <section class="sectionUno">
-            <img src="" alt="" class="imagen">
-            <p class="texto"></p>
+            <div class="conteiner-imagen">
+                <div class="conteiner-giftCard"></div>
+                <p class="texto">VISTA PREVIA</p>
+            </div>
         </section>
 
         <section class="sectionDos">
-            <article class="article__sectionDos">
-                <h2 class="h2"></h2>
-                <input type="text" class="input--nombre">
+            <article class="article-uno article-flex">
+                <h2 class="h2">
+                    Personalizacion de Giftcart
+                </h2>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre del destinatario...">
             </article>
 
-            <article class="article__sectionDos">
-                <h3 class="h3"></h3>
-                <div class="cartas">
-                    <div class="circulo"></div>
-                    <input type="text">
+            <article class="article-dos article-flex ">
+                <h3 class="h3">Color</h3>
+
+                <div class="conteiner-colores">
+                    <div class="carta">
+                        <div class="circulo__conteiner-colores circulo-azul"></div>
+                        <input type="radio" value="azul" id="azul" name="color"> 
+                    </div>
+                    <div class="carta">
+                        <div class="circulo__conteiner-colores circulo-celeste"></div>
+                        <input type="radio" value="celeste" id="celeste" name="color"> 
+                    </div>
+                    <div class="carta">
+                        <div class="circulo__conteiner-colores circulo-violeta"></div>
+                        <input type="radio" value="violeta" id="violeta" name="color"> 
+                    </div>
+                    <div class="carta">
+                        <div class="circulo__conteiner-colores circulo-naranja"></div>
+                        <input type="radio" value="naranja" id="naranja" name="color"> 
+                    </div>
+                    <div class="carta">
+                        <div class="circulo__conteiner-colores circulo-amarillo"></div>
+                        <input type="radio" value="amarillo" id="amarillo" name="color"> 
+                    </div>
+                    
                 </div>
             </article>
 
-            <article class="article__sectionDos">
-                <h3 class="h3"></h3>
-                <div class="carta">
-                    <p class="pixeles"></p>
-                    <input type="text">
+            <article class="article-pixeles article-flex">
+                <h3 class="h3">Tamaño de fuente</h3>
+                <div class="conteiner-pixeles">
+                    <div class="carta">
+                        <p class="pixeles">20px</p>
+                        <input type="radio" value="20px" id="20px" name="tamaño-fuente">
+                    </div>
+                    <div class="carta">
+                        <p class="pixeles">28px</p>
+                        <input type="radio" value="28px" id="28px" name="tamaño-fuente">
+                    </div>
+                    <div class="carta">
+                        <p class="pixeles">32px</p>
+                        <input type="radio" value="32px" id="32px" name="tamaño-fuente">
+                    </div>
+                    <div class="carta">
+                        <p class="pixeles">48px</p>
+                        <input type="radio" value="48px" id="48px" name="tamaño-fuente">
+                    </div>
+                    <div class="carta">
+                        <p class="pixeles">60px</p>
+                        <input type="radio" value="60px" id="60px" name="tamaño-fuente">
+                    </div>
+
+                </div>
+            
+            </article>
+
+            <article class="article-monto">
+                <label for="monto"><span>Monto $</span></label>
+                <input type="text" id="monto" name="monto">
+            </article>
+
+            <article class="article-ubicacion article-flex">
+                <h3 class="h3">Ubicacion</h3>
+                <div class="conteiner-ubicacion">
+                    <div class="carta">
+                        <div class="cuadrado">
+                            <div class="rectangulo rectanguloAbajoDerecha"></div>
+                        </div>
+                        <input type="radio" value="abajoDerecha" id="abajoDerecha" name="ubicacion"  >
+                    </div>
+                    <div class="carta">
+                        <div class="cuadrado">
+                            <div class="rectangulo rectanguloArribaIzquierda"></div>
+                        </div>
+                        <input type="radio" value="arribaIzquierda" id="arribaIzquierda" name="ubicacion"  >
+                    </div>
+                    <div class="carta">
+                        <div class="cuadrado">
+                            <div class="rectangulo rectanguloArribaDerecha"></div>
+                        </div>
+                        <input type="radio" value="arribaDerecha" id="arribaDerecha" name="ubicacion"  >
+                    </div>
                 </div>
             </article>
 
-            <article class="article__sectionDos">
-                <label for=""></label>
-                <input type="text">
-            </article>
+            <article class="article-fondo article-flex">
+                <h3 class="h3">Fondo</h3>
+                <div class="fondos">
+                    <div class="carta">
+                        <div class="fondo1 fondo"></div>
+                        <input type="radio" value="fondo1" id="fondo1" name="fondo"  >
 
-            <article class="article__sectionDos">
-                <h3 class="h3"></h3>
-                <div class="carta">
-                    <div class="rectangulo"></div>
-                    <input type="text">
-                </div>
-            </article>
+                    </div>
+                    <div class="carta">
+                        <div class="fondo2 fondo"></div>
+                        <input type="radio" value="fondo2" id="fondo2" name="fondo"  >
 
-            <article class="article__sectionDos">
-                <h3 class="h3"></h3>
-                <div class="carta">
-                    <div class="cuadrado"></div>
-                    <input type="text">
+                    </div>
+                    <div class="carta">
+                        <div class="fondo3 fondo"></div>
+                        <input type="radio" value="fondo3" id="fondo3" name="fondo"  >
+
+                    </div>
+                    <div class="carta">
+                        <div class="fondo4 fondo"></div>
+                        <input type="radio" value="fondo4" id="fondo4" name="fondo"  >
+
+                    </div>
+                    <div class="carta">
+                        <div class="fondo5 fondo"></div>
+                        <input type="radio" value="fondo5" id="fondo5" name="fondo"  >
+                    </div>
                 </div>
             </article>
             
-            <article class="article__sectionDos">
+            <article class="article-confirmacion ">
                 <a href="#">CONFIRMAR</a>
             </article>
             
