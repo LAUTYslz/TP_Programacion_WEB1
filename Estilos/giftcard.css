@@ -1,4 +1,4 @@
-*{
+main{
     margin: 0;
     padding: 0;
 }
@@ -13,18 +13,21 @@
 
 main{
     display: flex;
-    justify-content: center;
-    width: 70%;
-    margin: auto;
-    padding-top: 50px;
+    justify-content:space-around;
+    align-items: center;
+    /* padding-top: 50px; */
     padding-bottom: 50px;
 }
-section{
+.secciones_main{
     width: calc(50% - 20px);
     box-sizing: border-box;
 }
 
+main input{ border-radius: 10px;}
+
 /* SECTION LEFT----- SECTION-UNO*/
+
+h1{font-size: 70px; font-weight: bold; margin-bottom: 20px;}
 
 .conteiner-imagen{  
     display: flex;
@@ -40,11 +43,12 @@ section{
 .texto{text-align: center;margin:20px 20px}
 
 /* SECTION RIGTH */
+h3{margin-bottom: 10px;}
 
 .sectionDos {
     display:flex;
     flex-direction: column;
-    gap:15px;
+    gap:5px;
     width: 30%;
 }
 
@@ -70,7 +74,10 @@ section{
 .conteiner-pixeles{
     display: flex;
     gap:20px;
+    line-height: 0px;
 }
+
+.article-monto{margin-top: 30px; margin-bottom: 10px;}
 
 .conteiner-ubicacion{display:flex;gap: 20px;}
 .cuadrado{width: 40px;height: 40px; border: 1px solid  ;position: relative;}
@@ -89,7 +96,7 @@ section{
 
 article a{
     text-decoration: none;
-    background-color:#3097fd;
+    background-color:#E2F26B;
     color: black;
     padding: 10px;
     border-radius: 5px;
@@ -98,3 +105,5 @@ article a{
 #monto{padding: 5px; font-size: 15px;}
 #nombre{padding: 5px;font-size: 15px;}
 span{font-size: 20px;}
+
+.article-confirmacion{display: flex; justify-content: end;}

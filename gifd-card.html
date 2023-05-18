@@ -5,24 +5,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/giftcard.css">
+    <link rel="stylesheet" href="Estilos/General.css">
     <title>Giftcart</title>
 </head>
 <body>
-    <header class="header"></header>
+    <header>
+        <nav>
+        <a href="index.html"><span>EducacionNET</span> </a>
+        <div id="nav_cat">
+            <a href="#">Cursos</a>
+            <a href="Calendario.html">Fechas proximas</a>
+            <a href="gifd-card.html">Gift Card</a>
+            <a href="formulario-inscripcion.html">Inscripcion</a>
+            <a href="Contacto.html">Contacto</a>
+        </div>
+        
+        <div id="carrito_buscador">
+            <input type="text">
+            <div id="carrito">
+                <img src="Multimedia/inicio/svg/carrito.svg" alt="">
+                <p>0</p>
+            </div>
+        </div>
+        <!-- <form action=""></form> -->
+        </nav>
+        <hr>
+    </header>
 
     <main class="main">
-        <section class="sectionUno">
+        <section class="sectionUno" class="secciones_main">
             <div class="conteiner-imagen">
                 <div class="conteiner-giftCard"></div>
                 <p class="texto">VISTA PREVIA</p>
             </div>
         </section>
 
-        <section class="sectionDos">
+        <section class="sectionDos" class="secciones_main">
             <article class="article-uno article-flex">
-                <h2 class="h2">
+                <h1 class="h1">
                     Personalizacion de Giftcart
-                </h2>
+                </h1>
                 <input type="text" id="nombre" name="nombre" placeholder="Nombre del destinatario...">
             </article>
 
@@ -142,12 +164,56 @@
             </article>
             
             <article class="article-confirmacion ">
-                <a href="#">CONFIRMAR</a>
+                <a href="#">Confirmar</a>
             </article>
             
         </section>
     </main>
-    
-    <footer class="footer"></footer>
+
+    <hr>
+    <!--   ------------------------------------ FOOTER------------------------------------ -->
+    <footer>
+        <!-- <hr> -->
+        <section id="redes">
+            <h2>EducacionNET</h2>
+            <div>
+                <img class="img_footer" src="Multimedia/inicio/svg/facebook_svg.svg" alt="facebook">
+                <img class="img_footer" src="Multimedia/inicio/svg/linkedin_svg.svg" alt="linkedin">
+                <img class="img_footer" src="Multimedia/inicio/svg/blog_svg.svg" alt="blog">
+                <img class="img_footer" src="Multimedia/inicio/svg/youtube_svg.svg" alt="youtube">
+                <img class="img_footer" src="Multimedia/inicio/svg/tiktok_svg.svg" alt="tiktok">
+                <img class="img_footer" src="Multimedia/inicio/svg/instagram_svg.svg" alt="instagram">
+                <img class="img_footer" src="Multimedia/inicio/svg/discord_svg.svg" alt="discord">
+                <img class="img_footer" src="Multimedia/inicio/svg/twitter_svg.svg" alt="twitter">
+            </div>
+        </section>
+
+        <section id="links_footer">
+            <div>
+                <h3>NOSOTROS</h3>
+                <a href="#">Lautaro Alejandro Salazar 43.386.442</a>
+                <a href="#">Pablo Chambi 41.561.235</a>
+            </div>
+            <div>
+                <h3>MENU</h3><!--Antes alumnos-->
+                <a href="#">Alumni</a>
+                <a href="#">Blog</a>
+                <a href="#">Webinars gratis</a>
+                <a href="#">Portal de Empleos</a>
+            </div>
+            <div>
+                <h3>REDES</h3>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Discord</a>
+                <a href="#">Linkedin</a>
+            </div>
+        </section>
+        <hr>
+        <section id="ayuda">
+            <p>¿Te podemos ayudar? 0810-999-4334</p>
+        </section>
+        <hr>
+    </footer>
 </body>
 </html>
