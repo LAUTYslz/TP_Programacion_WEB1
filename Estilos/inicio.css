@@ -45,15 +45,15 @@ nav a{font-size: 20px; color: #fff;}
 #Titulo h1{font-size: 70px; margin:0 0 30px}
 #Titulo p{font-size: 20px;}
 #Titulo button{height: 60px;width: 190px; border-radius: 6px; background-color: #E2F26B; margin-top: 40px; font-size: 15px; font-weight: 500;}
-#Titulo button:hover{background-color: #e2f26be6; cursor: pointer;}
+#Titulo button:hover{background-color: #e2f26be6; cursor: pointer; transition: 0.1s;}
 
 /*Categorias*/
 #Categorias {height: auto;margin: 100px 0;}
 #Categorias div{display: flex; justify-content:space-between; align-items: flex-start; margin: 0;}
-#Categorias .buttons_cat{width: 180px; height: 60px; box-shadow: 0 -3px 20px #A79BF2; background-color: #DC8DF2;border-radius: 6px; border-color: #534e54;
+#Categorias .buttons_cat{width: 180px; height: 60px; background-color: #DC8DF2;border-radius: 6px; border-color: #534e54;
     /* background-image: linear-gradient(to right bottom, #DC8DF2,#59aff5); */
 cursor: pointer;}
-#Categorias .buttons_cat:hover{background: #dc8df2ca;}
+#Categorias .buttons_cat:hover{background: #dc8df2ca; box-shadow: 0 -3px 20px #A79BF2; transition: 0.5s;}
 #Categorias a{color: #fff}
 
 /*  Carrousel */
@@ -116,7 +116,7 @@ cursor: pointer;}
 #Cursos_destacados .destacados img {height: 10px;}
 
 #Cursos_destacados .destacados button {height: 50px; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 5px; color: #E2F26B;}
-#Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer;}
+#Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer; transition: 0.4s;}
 #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
 
 .datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}

@@ -1,55 +1,66 @@
 /*DESCRIPCION GENERAL DEL CURSO*/
 #descripcion-del-curso {
     display: flex;
-
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
 }
 
-#informacion-curso {
+/* #informacion-curso {
     background-color: rgb(32, 40, 48);
     padding: 40px 40px 40px 90px;
 
-}
+} */
+
+#informacion-curso{width: 60%;}
 
 #informacion-curso h1 {
-    font-size: 30px;
-    padding: 20px 0px;
+    font-size: 70px;
+    /* padding: 20px 0px; */
 }
 
 #informacion-curso h3 {
-    padding-top: 20px;
+    color: #dc8df2ca;
+    /* padding-top: 20px; */
+    font-size: 30px;
 }
 
-#informacion-curso #destacado {
+#informacion-curso li{ font-size: 20px;}
 
+#informacion-curso #destacado {
     font-weight: bold;
 }
 
 #informacion-curso .botones {
     display: flex;
-    justify-content: space-between;
+    justify-content: start;
+    height: 40px;
+    margin-top: 70px;
 }
 
 #informacion-curso a {
-    margin-top: 20px;
+    /* margin-top: 20px; */
     text-decoration: none;
-    color: #e5e5e5;
-    background-color: #09abf0;
-    padding: 10px;
+    color: #1F1F22;
+    background-color: #E2F26B;
+    /* padding: 10px; */
     border-radius: 10px;
+    width: 150px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 40px;
 }
 
-#imagen-conteiner {
-    width: 788px;
-    height: 430px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #121a21;
+#informacion-curso a:hover{
+    background-color: #e2f26be6;
+    transition: 0.2s;
 }
+
 
 #imagen-conteiner img {
-    width: 540px;
-    border-radius: 20px;
+    width: auto;
+    height: 250px;
+    border-radius: 10px;
 }
 
 /*CONTENIDOS POR CLASE*/
@@ -57,11 +68,24 @@
 #contenidos-por-clase {
     width: 50%;
     margin: auto;
-    padding: 50px;
+    margin-top: 200px;
+    /* padding: 50px; */
+}
+
+#contenidos-por-clase h2{
+    text-align: center;
+    color: #E2F26B;
 }
 
 #contenidos-por-clase h3 {
     padding: 10px 0px;
+    color: #dc8df2ca;
+    font-size: 30px;
+}
+
+#lista-de-contenidos-del-curso{
+    border: 2px solid #534e54;
+    padding: 30px;
 }
 
 
@@ -70,42 +94,53 @@
     display: flex;
     justify-content: space-between;
     padding: 9px;
-    border: 1px solid rgba(26, 37, 61, 0.857);
+    /* border: 1px solid rgba(26, 37, 61, 0.857); */
 }
+
+.contenido-curso{ margin-bottom: 15px;}
 
 #conteiner-lista-videos li {
     display: flex;
     padding: 10px;
     justify-content: space-between;
-    border: 1px solid rgba(26, 37, 61, 0.857);
+    border: 1px solid #534e54;
 }
 
+.examenes{margin: 10px 0;}
+
 /*DATOS DEL PROFESOR*/
-#informacion-del-profesor {
-    padding: 30px 30px;
-    background-color: #1f2b3587;
+
+#informacion-del-profesor{
+    margin: 100px 0;
+}
+#informacion-del-profesor h2{
+    color: #E2F26B;
+    /* padding: 30px 30px; */
 }
 
 #contenedor-profe {
-    width: 80%;
+    background-color: #2B2C32;
+    border-radius: 10px;
+    /* width: 90%; */
     margin: auto;
-    padding: 20px 0px;
+    padding: 20px ;
     /*background-color: #1e6eb0;*/
 }
 
 
-#informacion-del-profesor h2 {
+/* #informacion-del-profesor h2 {
     padding: 20px 0px;
-}
+} */
 
 #conteiner-carta-profesor {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 #imagen-conteiner-profesor {
-    width: 800px;
-    height: 138px;
+    /* width: 800px;
+    height: 138px; */
+    width: 20%;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -122,46 +157,41 @@
     color: #878c8e;
 }
 
+#conteiner-datos-profesor {
+    width: 75%;
+}
+
+#conteiner-datos-profesor h3 {
+    /* padding: 10px 0px; */
+    color: #dc8df2ca;
+    font-size: 30px;
+}
+
 #conteiner-datos-profesor .estrella {
     color: yellow;
 }
 
 /*//////---CURSOS RELACIONADOS---////////////*/
-#cursos-relacionados{
-    padding: 60px 20px;
-    color: #ffffff;
-}
-#cursos-relacionados h2{
-    padding: 22px;
-    text-align: center;
-    font-size: 30px;
-}
 
-#Cursos_destacados {
-    display: flex;
-    margin: auto;
-    justify-content: space-between;
-    justify-content: center;
-    width: 90%;
-    line-height: 45px;
-}
+#cursos-relacionados{margin-top: 150px; margin-bottom: 100px;}
+
+#cursos-relacionados h2{color: #E2F26B; margin-bottom: 50px;}
 
 
-#Cursos_destacados .destacados {
-    background-color: #2B2C32;
-    height: 300px;
-    width: 20%;
-    padding: 30px;
-    border-radius: 5px;
-    margin: 20px;
-}
+#Destacados {margin-top: 150px; margin-bottom: 100px;}
+
+#Cursos_destacados {display: flex; justify-content: space-between;}
+
+#Cursos_destacados .destacados {background-color: #2B2C32; height: 300px; width: 20%; padding: 30px; border-radius: 5px; }
 
 #Cursos_destacados .destacados h3{color: #fff; font-size: 30px; font-weight: 500; margin: 0;}
 #Cursos_destacados .destacados p{font-size: 10px; color: #acacac; line-height: 20px;}
 #Cursos_destacados .destacados span{font-weight: 700;}
 #Cursos_destacados .destacados img {height: 10px;}
 
-
 #Cursos_destacados .destacados button {height: 50px; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 5px; color: #E2F26B;}
-#Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer;}
+#Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer; transition: 0.4s;}
 #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
+
+.datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}
+.precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
