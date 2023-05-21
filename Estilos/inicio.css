@@ -118,6 +118,7 @@ cursor: pointer;}
 #Cursos_destacados .destacados button {height: 50px; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 5px; color: #E2F26B;}
 #Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer; transition: 0.4s;}
 #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
+#Cursos_destacados .destacados .boton_precio a {color: #E2F26B;}
 
 .datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}
 .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}

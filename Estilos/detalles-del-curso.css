@@ -56,10 +56,11 @@
     transition: 0.2s;
 }
 
+#imagen-conteiner{width: 35%;}
 
 #imagen-conteiner img {
-    width: auto;
-    height: 250px;
+    width: 100%;
+    /* height: 250px; */
     border-radius: 10px;
 }
 

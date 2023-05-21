@@ -36,7 +36,7 @@ h1{font-size: 70px; font-weight: bold; margin-bottom: 20px;}
 }
 
 .conteiner-giftCard{
-    background: url(../img/fondo03.png);
+    background: url(/Multimedia/Gift_card/fondo03.png);
     width:350px;
     height: 350px;
 }
@@ -88,11 +88,11 @@ h3{margin-bottom: 10px;}
 
 .fondos{display: flex;gap:20px;}
 .fondo{width: 40px;height: 40px;}
-.fondo1{background: url(../img/fondo03.png) no-repeat;}
-.fondo2{background: url(../img/fondo04.png) no-repeat;}
-.fondo3{background: url(../img/fondo05.png) no-repeat;}
-.fondo4{background: url(../img/fondo06.png) no-repeat;}
-.fondo5{background: url(../img/fondo07.png) no-repeat;}
+.fondo1{background: url(/Multimedia/Gift_card/fondo03.png) no-repeat;}
+.fondo2{background: url(/Multimedia/Gift_card/fondo04.png) no-repeat;}
+.fondo3{background: url(/Multimedia/Gift_card/fondo05.png) no-repeat;}
+.fondo4{background: url(/Multimedia/Gift_card/fondo06.png) no-repeat;}
+.fondo5{background: url(/Multimedia/Gift_card/fondo07.png) no-repeat;}
 
 article a{
     text-decoration: none;
