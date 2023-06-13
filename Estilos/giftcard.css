@@ -8,7 +8,7 @@ main{
     --color-celeste:#55d1ea;
     --color-violeta:#ae54c6;
     --color-naranja:#deb63f;
-    --color-amarillo:#ebe548;
+    --color-negro:#000000;
 }
 
 main{
@@ -36,11 +36,24 @@ h1{font-size: 70px; font-weight: bold; margin-bottom: 20px;}
 }
 
 .conteiner-giftCard{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
     background: url(/Multimedia/Gift_card/fondo03.png);
-    width:350px;
-    height: 350px;
+    width:400px;
+    height: 400px;
+    position: relative;
 }
+
 .conteiner-giftCard img{width: 100%; height: 100%;}
+
+.fechaHoraGift{}
+.giftCardPara{position: absolute;      top: 79px; left: 117px;}
+.nombreDestinatario{text-align: center;}
+.precio{position: absolute;top: 12px;top: 12px;  right: 0px; background-color: black; padding: 2px;}
+
 .texto{text-align: center;margin:20px 20px}
 
 /* SECTION RIGTH */
@@ -66,17 +79,33 @@ h3{margin-bottom: 10px;}
     height: 40px;
     border-radius: 50%;
 }
+
+/* COLORES */
 .circulo-azul{background-color: var(--color-azul);}
 .circulo-celeste{background-color: var(--color-celeste);}
 .circulo-violeta{background-color: var(--color-violeta);}
 .circulo-naranja{background-color: var(--color-naranja);}
-.circulo-amarillo{background-color: var(--color-amarillo);}
+.circulo-negro{background-color: var(--color-negro);}
+
+.azul{ color :var(--color-azul)}
+.celeste{ color :var(--color-celeste)}
+.violeta{ color :var(--color-violeta)}
+.naranja{ color :var(--color-naranja)}
+.negro{ color :var(--color-negro)}
 
 .conteiner-pixeles{
     display: flex;
     gap:20px;
     line-height: 0px;
 }
+
+/* Tamanio fuente de nombre en giftCard*/
+.t20px{font-size: 20px;}
+.t28px{font-size: 28px;}
+.t32px{font-size: 30px;}
+.t48px{font-size: 48px;}
+.t60px{font-size: 60px;}
+
 
 .article-monto{margin-top: 30px; margin-bottom: 10px;}
 
@@ -87,13 +116,17 @@ h3{margin-bottom: 10px;}
 .rectanguloArribaIzquierda{position: absolute;top:0;left:0}
 .rectanguloArribaDerecha{position: absolute;top:0;right: 0;}
 
+.abajoDerecha{position: absolute;bottom: -20px; right: 5px;}
+.arribaIzquierda{position: absolute;top: -20px;  left: 5px;}
+.arribaDerecha{position: absolute;top:-10;right: 0;}
+
 .fondos{display: flex;gap:20px;}
 .fondo{width: 40px;height: 40px;}
-.fondo1{background: url(/Multimedia/Gift_card/fondo03.png) no-repeat;}
-.fondo2{background: url(/Multimedia/Gift_card/fondo04.png) no-repeat;}
-.fondo3{background: url(/Multimedia/Gift_card/fondo05.png) no-repeat;}
-.fondo4{background: url(/Multimedia/Gift_card/fondo06.png) no-repeat;}
-.fondo5{background: url(/Multimedia/Gift_card/fondo07.png) no-repeat;} 
+.fondo1{background: url(/Multimedia/Gift_card/fondo03.png) ;}
+.fondo2{background: url(/Multimedia/Gift_card/fondo04.png);}
+.fondo3{background: url(/Multimedia/Gift_card/fondo05.png) ;}
+.fondo4{background: url(/Multimedia/Gift_card/fondo06.png) ;}
+.fondo5{background: url(/Multimedia/Gift_card/fondo07.png) ;} 
 
 .fondo-img img{height: 40px; width:40px;}
 

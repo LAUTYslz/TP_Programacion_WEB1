@@ -35,7 +35,13 @@
     <main class="main">
         <section class="sectionUno" class="secciones_main">
             <div class="conteiner-imagen">
-                <div class="conteiner-giftCard"></div>
+                <div class="conteiner-giftCard">
+                    <p class="fechaHoraGift negro abajoDerecha">12/06/2024 10:15am</p>
+                    <p class="giftCardPara negro">Gift Card para</p>
+                    <p class="nombreDestinatario negro "></p>
+                    <p class="precio">$00000.-</p>
+
+                </div>
                 <p class="texto">VISTA PREVIA</p>
             </div>
         </section>
@@ -69,8 +75,8 @@
                         <input type="radio" value="naranja" id="naranja" name="color"> 
                     </div>
                     <div class="carta">
-                        <div class="circulo__conteiner-colores circulo-amarillo"></div>
-                        <input type="radio" value="amarillo" id="amarillo" name="color"> 
+                        <div class="circulo__conteiner-colores circulo-negro"></div>
+                        <input type="radio" value="negro" id="negro" name="color" checked> 
                     </div>
                     
                 </div>
@@ -81,23 +87,23 @@
                 <div class="conteiner-pixeles">
                     <div class="carta">
                         <p class="pixeles">20px</p>
-                        <input type="radio" value="20px" id="20px" name="tamaño-fuente">
+                        <input type="radio" value="t20px" id="t20px" name="tamanio-fuente">
                     </div>
                     <div class="carta">
                         <p class="pixeles">28px</p>
-                        <input type="radio" value="28px" id="28px" name="tamaño-fuente">
+                        <input type="radio" value="t28px" id="t28px" name="tamanio-fuente" >
                     </div>
                     <div class="carta">
                         <p class="pixeles">32px</p>
-                        <input type="radio" value="32px" id="32px" name="tamaño-fuente">
+                        <input type="radio" value="t32px" id="t32px" name="tamanio-fuente">
                     </div>
                     <div class="carta">
                         <p class="pixeles">48px</p>
-                        <input type="radio" value="48px" id="48px" name="tamaño-fuente">
+                        <input type="radio" value="t48px" id="t48px" name="tamanio-fuente">
                     </div>
                     <div class="carta">
                         <p class="pixeles">60px</p>
-                        <input type="radio" value="60px" id="60px" name="tamaño-fuente">
+                        <input type="radio" value="t60px" id="t60px" name="tamanio-fuente" >
                     </div>
 
                 </div>
@@ -116,7 +122,7 @@
                         <div class="cuadrado">
                             <div class="rectangulo rectanguloAbajoDerecha"></div>
                         </div>
-                        <input type="radio" value="abajoDerecha" id="abajoDerecha" name="ubicacion"  >
+                        <input type="radio" value="abajoDerecha" id="abajoDerecha" name="ubicacion" checked >
                     </div>
                     <div class="carta">
                         <div class="cuadrado">
@@ -215,5 +221,6 @@
         </section>
         <hr>
     </footer>
+    <script src="js/gifdCard.js"></script>
 </body>
 </html>
