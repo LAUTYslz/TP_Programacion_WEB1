@@ -1,7 +1,3 @@
-main{
-    margin: 0;
-    padding: 0;
-}
 
 :root{
     --color-azul: #305ffd;
@@ -12,11 +8,14 @@ main{
 }
 
 main{
+    width: 100% !important;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-evenly;
     align-items: center;
-    /* padding-top: 50px; */
+    padding-top: 50px;
     padding-bottom: 50px;
+    flex-wrap: wrap;
+    gap:0.5em;
 }
 .secciones_main{
     width: calc(50% - 20px);
@@ -27,7 +26,7 @@ main input{ border-radius: 10px;}
 
 /* SECTION LEFT----- SECTION-UNO*/
 
-h1{font-size: 70px; font-weight: bold; margin-bottom: 20px;}
+h1{font-size: 50px; font-weight: bold; margin-bottom: 20px;max-width: 8em;}
 
 .conteiner-imagen{  
     display: flex;
@@ -49,10 +48,9 @@ h1{font-size: 70px; font-weight: bold; margin-bottom: 20px;}
 
 .conteiner-giftCard img{width: 100%; height: 100%;}
 
-.fechaHoraGift{}
 .giftCardPara{position: absolute;      top: 79px; left: 117px;}
 .nombreDestinatario{text-align: center;}
-.precio{position: absolute;top: 12px;top: 12px;  right: 0px; background-color: black; padding: 2px;}
+.precio{background-color: black; padding: 5px;}
 
 .texto{text-align: center;margin:20px 20px}
 
@@ -63,7 +61,7 @@ h3{margin-bottom: 10px;}
     display:flex;
     flex-direction: column;
     gap:5px;
-    width: 30%;
+    
 }
 
 
@@ -116,9 +114,9 @@ h3{margin-bottom: 10px;}
 .rectanguloArribaIzquierda{position: absolute;top:0;left:0}
 .rectanguloArribaDerecha{position: absolute;top:0;right: 0;}
 
-.abajoDerecha{position: absolute;bottom: -20px; right: 5px;}
-.arribaIzquierda{position: absolute;top: -20px;  left: 5px;}
-.arribaDerecha{position: absolute;top: -20px; right: 5px;}
+.abajoDerecha{position: absolute;bottom: -25px; right: 0px;}
+.arribaIzquierda{position: absolute;top: -25px;  left: 0px;}
+.arribaDerecha{position: absolute;top: -25px; right: 0px;}
 
 .fondos{display: flex;gap:20px;}
 .fondo{width: 40px;height: 40px;}
