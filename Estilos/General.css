@@ -12,13 +12,16 @@
 body{
     background-color: #1F1F22;
     color: white;
-    font-size: 100%;
+
+    /* Responsive */
+    font-size: 100%; 
 }
 
 p{
-    font-size: 1.3em;
+    font-size: 1.626em;
     line-height: 1.3em;
 }
+
 
 a{text-decoration: none;}
 
@@ -27,16 +30,17 @@ hr{ height: 0.125em; border-color: #534e54;}
 h2{font-size: 2.8125em;}
 
 /*------------------------------- HEADER nav ---------------------------------*/
+.desplegable{display: none;}
 nav{display: flex; justify-content: space-between; height:3.125em; margin: 1.25em 1.25em;}
 nav span{font-size: 2.5em; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
 nav #nav_cat{display: flex; justify-content: space-around; width: 43.75em; align-items:center;}
 nav a{font-size: 1.25em; color: #fff;}
-
-#carrito_buscador input{border-radius: 1.25em; width: 18.75em; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height: 1.875em;}
+.lupa{display: none;;}
+#carrito_buscador input{border-radius: 1.25em; width: 21.484375em; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height: 1.875em;}
 #carrito_buscador{ display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 25%;}
 #carrito{ display: flex;flex-direction: row; align-items: center;}
 #carrito img {height: 2.5em;}
-#carrito p {color: #fff; background-color: #DC8DF2; line-height: 1.875em; border-radius: 50%; font-size: 1.5625em; height: 1.5625em; width: 1.5625em; text-align: center;}
+#carrito p {color: #fff; background-color: #DC8DF2; line-height: 1.875em; border-radius: 50%; font-size: 1.626em; height: 1.626em; width: 1.626em; text-align: center;}
 
 /*---------------------------------- MAIN-------------------------------------*/
 
@@ -61,3 +65,73 @@ footer {width: 80%; margin: auto;}
 
 /* ayuda */
 #ayuda{text-align: center;}
+
+
+/* Teléfonos */
+/* -------------------------------------RESPONSIVE-------------------------------------- */
+@media screen and (max-width: 47em){
+    body{
+       font-size: 80%;
+    }
+    /* ----------------------Header--------------------------- */
+    header{font-size: 90%}
+    nav{display: flex; flex-direction: row; justify-content: center;}
+    .desplegable{display: block; background-size: contain; height: 3em;}
+    .desplegable:hover{ cursor: pointer;}
+    #nav_cat {display: none; width: 0;}
+    #nav_cat a{display: none;}
+    .lupa{display: block; height: 4em; background-size: contain;}
+    #carrito_buscador input{ display: none;}
+
+
+    /* -----------------------Main----------------------------- */
+    main{
+        width: 90%;
+    }
+
+    /* -----------------------Footer------------------------- */
+    footer{ width: 90%;}
+    /* Redes */
+    #redes{ display: flex; flex-direction: column;}
+    #redes div { display: flex; justify-content:space-around; width: 90%;}
+    /* Links */
+    #links_footer{ margin-top: 4em; width: 90%; margin-bottom: 2em;}
+    #links_footer{display: grid; grid-template-areas: "redes menu" "nosotros menu"; grid-template-columns: 2fr 1fr; grid-template-rows: 1fr 1fr; grid-column-gap: 1em;}
+    #nosotros.a{grid-area: nosotros; background: blue;}
+    #menu.b{grid-area: menu; background: yellow;}
+    #redes.c{grid-area: redes; background: white;}
+    /* Ayuda */
+    #ayuda{font-size: 80%;}
+
+    
+}
+
+   /* Tablet */
+@media screen and (min-width: 48em) and (max-width: 70em){
+    body{
+       font-size: 80%;
+   }
+    /*--------------------------header--------------------------------  */
+    nav{display: flex; flex-direction: row; justify-content: center;}
+    .desplegable{display: block; background-size: contain;}
+    .desplegable:hover{ cursor: pointer;}
+    #nav_cat {display: none; width: 0;}
+    #nav_cat a{display: none;}
+    /* .lupa{display: block;} */
+    /* #carrito_buscador input{ display: none;} */
+
+
+   /*-------------------------- Footer -------------------------*/
+   footer{ width: 80%;}
+   /* Redes */
+   #redes{ display: flex; flex-direction: column;}
+   #redes div { display: flex; justify-content:space-evenly; width: 90%;}
+   /* Links */
+   #links_footer{ width: 100%; margin: 4em auto 2em;}
+   #links_footer{display: flex; flex-direction: row; justify-content: space-between;}
+   #nosotros.a{grid-area: nosotros; background: blue;}
+   #menu.b{grid-area: menu; background: yellow;}
+   #redes.c{grid-area: redes; background: white;}
+   /* Ayuda */
+   /* #ayuda{font-size: 80%;} */
+}
