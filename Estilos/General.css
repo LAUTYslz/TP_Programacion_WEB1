@@ -6,7 +6,7 @@
 *{
     box-sizing: border-box; 
     font-family: 'Josefin Sans', sans-serif;
-    /* margin: 0; */
+    
 }
 
 body{
@@ -14,10 +14,14 @@ body{
     color: white;
 
     /* Responsive */
-    font-size: 100%;
+    font-size: 100%; 
 }
 
-p{font-size: 1.626em;}
+p{
+    font-size: 1.626em;
+    line-height: 1.3em;
+}
+
 
 a{text-decoration: none;}
 
@@ -40,11 +44,11 @@ nav a{font-size: 1.25em; color: #fff;}
 
 /*---------------------------------- MAIN-------------------------------------*/
 
-main{width: 70%; margin: auto;}
+main{width: 80%; margin: auto;}
 
 /* --------------------------------FOOTER------------------------------------ */
 /* footer hr{width: 100% !important;} */
-footer {width: 70%; margin: auto;}
+footer {width: 80%; margin: auto;}
 /* Redes */
 /* Colores de los iconos cambiados desde svg */
 #redes{display: flex;align-items: center;justify-content: space-between;}

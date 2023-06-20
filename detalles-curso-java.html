@@ -1,11 +1,14 @@
 <!DOCTYPE html>
+
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="Estilos/detalles-del-curso.css">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Estilos/General.css">
+    <link rel="stylesheet" href="Estilos/detalles-del-curso.css">
 
-
+    <script src="js/detalles-curso-java.js"></script>
     <script src="https://kit.fontawesome.com/a52b387a60.js" crossorigin="anonymous"></script>
     <title>Detalles del curso de java</title>
 </head>
@@ -23,7 +26,7 @@
           <a href="formulario-inscripcion.html">Inscripcion</a>
           <a href="Contacto.html">Contacto</a>
       </div>
-      
+    
       <div id="carrito_buscador">
           <input type="text">
           <a class="lupa" href="#"><img src="/Multimedia/inicio/lupa.png" alt=""></a>
@@ -44,23 +47,36 @@
   
       <article id="informacion-curso">
         <h1>Java desde Cero</h1>
-        <p>Java es el lenguaje de programación para el backend con <br> mayor demanda laboral en grandes empresas de todo el mundo.</p>
+        <p>Java es el lenguaje de programación para el backend con mayor demanda laboral en grandes empresas de todo el mundo.</p>
         <h3>¿Que aprenderás?</h3>
         <ul>
           <li>Conocer la sintaxis y el flujo de trabajo de Java.</li>
-          <li>Aprenderemos los tipos de datos básicos, condicionales, ciclos del <br> lenguaje y también aprenderemos a compilar el código fuente.</li>
+          <li>Aprenderemos los tipos de datos básicos, condicionales, ciclos del lenguaje y también aprenderemos a compilar el código fuente.</li>
         </ul>
-        <p><br><spam id="destacado">Requisitos previos:</spam>
-            conocimientos básicos de los conceptos de <br> programación.</p>
-        <p> <br><spam id="destacado">Tiempo de dedicación necesario:</spam>  12 horas</p>
+        <p><spam id="destacado">Requisitos previos:</spam>
+            conocimientos básicos de los conceptos de programación.</p>
+        <p><spam id="destacado">Tiempo de dedicación necesario:</spam>  12 horas</p>
       
-          <div class="botones">
-            <a href="#">Inscripción</a>
+        <div class="botones">
+          <a id="inscribirse">Inscribirse</a>
+          <span class="t25px padding8px">$15400 ARS</span>
+        </div>
+
+
+        <div class="modal ocultar">
+          <h2 class="texto-centrado">¡Felicitaciones!</h2>
+          <p class="texto-centrado">Se añadio al carrito</p>
+          <div class="modal__java">
+            <img class="img120px" src="Multimedia/Curso_Java/java.webp" alt="java desde cero">
+            <p class="t35px"> Java desde cero</p>
+            <p class="padding8px">$15400 ARS </p>
+
           </div>
-
-
-  
+            <div><a id="cerrar">cerrar</a></div>
+          </div>
+        
       </article>
+
 
       <article id="imagen-conteiner">
         <img src="Multimedia/Curso_Java/java.webp" alt="Imagen representativa del curso de java">
@@ -174,7 +190,7 @@
                   <i class="fa-solid fa-star estrella"></i>
                   <i class="fa-solid fa-star"></i>
                 </p>
-                <p>Juan Garcia es un desarrollador de software y conferencista, especializado en <br> el área de la programación web y el desarrollo de aplicaciones móviles. Es <br> conocido por su trabajo como fundador y CEO de DevHack, una comunidad <br> de desarrolladores en línea que ofrece cursos y tutoriales en línea sobre temas <br> relacionados con la programación y el desarrollo de software. También es autor <br> de varios libros sobre programación y tecnología, incluyendo "React Native en <br> acción" y "Desarrollo Web con Angular". Alexys es un destacado miembro de la<br> comunidad de desarrolladores de América Latina y ha sido reconocido por <br> su trabajo y contribuciones en la industria tecnológica.</p>
+                <p>Juan Garcia es un desarrollador de software y conferencista, especializado en el área de la programación web y el desarrollo de aplicaciones móviles. Es conocido por su trabajo como fundador y CEO de DevHack, una comunidad de desarrolladores en línea que ofrece cursos y tutoriales en línea sobre temas  relacionados con la programación y el desarrollo de software. También es autor de varios libros sobre programación y tecnología, incluyendo "React Native en  acción" y "Desarrollo Web con Angular". Alexys es un destacado miembro de la comunidad de desarrolladores de América Latina y ha sido reconocido por  su trabajo y contribuciones en la industria tecnológica.</p>
   
               </div>
   
@@ -193,7 +209,7 @@
                 </div>
                 <hr>
                 <div class="precio">
-                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <p>Hasta 6 cuotas sin interes</p>
                     <h3><span>$14.658 ARS</span></h3>
                 </div>
                 <div class="boton_precio">
@@ -207,7 +223,7 @@
                 </div>
                 <hr>
                 <div class="precio">
-                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <p>Hasta 6 cuotas sin interes</p>
                     <h3><span>$15.406 ARS</span></h3>
                 </div>
                 <div class="boton_precio">
@@ -221,7 +237,7 @@
                 </div>
                 <hr>
                 <div class="precio">
-                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <p>Hasta 6 cuotas sin interes</p>
                     <h3><span>$16.800 ARS</span></h3>
                 </div>
                 <div class="boton_precio">
@@ -235,7 +251,7 @@
                 </div>
                 <hr>
                 <div class="precio">
-                    <p><strong>Hasta 6 cuotas sin interes</strong></p>
+                    <p>Hasta 6 cuotas sin interes</p>
                     <h3><span>$20.100 ARS</span></h3>
                 </div>
                 <div class="boton_precio">
