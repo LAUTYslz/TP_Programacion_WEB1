@@ -19,19 +19,19 @@ p{font-size: 25px;}
 
 a{text-decoration: none;}
 
-hr{ height: 2px; border-color: #534e54;} */
+hr{ height: 0.125em; border-color: #534e54;} */
 
 /*------------------------------- HEADER nav ---------------------------------*/
-/* nav{display: flex; justify-content: space-between; height:50px; margin: 20px 20px;}
-nav span{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
+/* nav{display: flex; justify-content: space-between; height:3.125em; margin: 1.25em 1.25em;}
+nav span{font-size: 2.5em; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
 nav #nav_cat{display: flex; justify-content: space-around; width: 700px; align-items:center;}
-nav a{font-size: 20px; color: #fff;}
+nav a{font-size: 1.25em; color: #fff;}
 
-#carrito_buscador input{border-radius: 20px; width: 300px; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height: 30px;}
+#carrito_buscador input{border-radius: 1.25em; width: 18.75em; background-color: rgba(235, 229, 229, 0.928); border-color: #DC8DF2; height:1.875em;}
 #carrito_buscador{ display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 25%;}
 #carrito{ display: flex;flex-direction: row; align-items: center;}
-#carrito img {height: 40px;}
-#carrito p {color: #fff; background-color: #DC8DF2; line-height: 30px; border-radius: 50%; font-size: 25px; height: 25px; width: 25px; text-align: center;} */
+#carrito img {height: 2.5em;}
+#carrito p {color: #fff; background-color: #DC8DF2; line-height:1.875em; border-radius: 50%; font-size: 25px; height: 25px; width: 25px; text-align: center;} */
 
 
 
@@ -41,81 +41,87 @@ nav a{font-size: 20px; color: #fff;}
 /* main{width: 70%; margin: auto;} */
 
 /* Titulo */
-#Titulo{text-align: center; color: #fff; margin: 250px 0;}
-#Titulo h1{font-size: 70px; margin:0 0 30px}
-#Titulo p{font-size: 20px;}
-#Titulo button{height: 60px;width: 190px; border-radius: 6px; background-color: #E2F26B; margin-top: 40px; font-size: 15px; font-weight: 500;}
+#Titulo{text-align: center; color: #fff; margin:15.625em 0;}
+#Titulo h1{font-size:4.375em; margin:0 0 0.875em}
+#Titulo p{font-size: 1.25em;}
+#Titulo button{height: 3.75em;width: 11.875em; border-radius: 0.375em; background-color: #E2F26B; margin-top: 2.5em; font-size: 0.9375em; font-weight: 500;}
 #Titulo button:hover{background-color: #e2f26be6; cursor: pointer; transition: 0.1s;}
 
 /*Categorias*/
-#Categorias {height: auto;margin: 100px 0;}
+#Categorias {height: auto;margin: 6.25em 0;}
 #Categorias div{display: flex; justify-content:space-between; align-items: flex-start; margin: 0;}
-#Categorias .buttons_cat{width: 180px; height: 60px; background-color: #DC8DF2;border-radius: 6px; border-color: #534e54;
+#Categorias .buttons_cat{width: 11.25em; height: 3.75em; background-color: #DC8DF2;border-radius: 0.375em; border-color: #534e54;
     /* background-image: linear-gradient(to right bottom, #DC8DF2,#59aff5); */
 cursor: pointer;}
-#Categorias .buttons_cat:hover{background: #dc8df2ca; box-shadow: 0 -3px 20px #A79BF2; transition: 0.5s;}
+#Categorias .buttons_cat:hover{background: #dc8df2ca; box-shadow: 0 -0.1875em 1.25em #A79BF2; transition: 0.5s;}
 #Categorias a{color: #fff}
 
 /*  Carrousel */
-#carrousel img { border-radius: 10px; height: 400px;}
-#carrousel { display: flex; justify-content: center;}
+#carrousel img { border-radius: 0.625em; width: 50%; height: auto;}
+#carrousel { display: flex; justify-content: center; width: 100%;}
 
 /* Escuelas */
-#Escuelas{ border: 3px solid #E2F26B; text-align: center; margin: 120px 0;}
+#Escuelas{ border: 0.1875em solid #E2F26B; text-align: center; margin: 7.5em 0;}
 #Escuelas hr{width: 70%; border-color: #E2F26B;}
-#Escuelas .img_escuelas{height: 150px}
+#Escuelas .img_escuelas{height: 9.375em}
 
 /* Exp aprendizaje */
-#Experiencia_aprendizaje{display: flex; justify-content: space-between; margin: 150px 0; align-items: center;}
+#Experiencia_aprendizaje{display: flex; justify-content: space-between; margin: 9.375em 0; align-items: center;}
+#Experiencia_texto{ width: 50%;}
 #Experiencia_aprendizaje h2{color: #E2F26B;}
-#Experiencia_aprendizaje img{border-radius: 10px ; height: 300px;}
-#Experiencia_aprendizaje li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+#Experiencia_aprendizaje #img_inicio1 {width: 40%;}
+#Experiencia_aprendizaje img{border-radius: 0.625em ; width: 100%; height: auto;}
+#Experiencia_aprendizaje li{font-size: 1.25em; font-weight: 300; margin-bottom: 0.625em;}
 
 /* Career Advisor */
-#Carrer_advisor{display: flex; justify-content: space-between; margin: 150px 0; align-items:start;}
-#Carrer_advisor img{border-radius: 10px ; height: 300px;}
+#Carrer_advisor{display: flex; justify-content: space-between; margin: 9.375em 0; align-items:center;}
+#Carrer_advisor #img_inicio2{ width: 40%; }
+#Carrer_advisor img{border-radius: 0.625em ; width: 100%; }
+#Carrer_texto{width: 50%;}
 #Carrer_advisor h2{color: #E2F26B;}
-#Carrer_advisor li{font-size: 20px; font-weight: 300; margin-top: 10px;}
+#Carrer_advisor li{font-size: 1.25em; font-weight: 300; margin-top: 0.625em;}
 
 /* Estadistica */
-#Estadistica{display: flex; justify-content: space-around; align-items: center; text-align: center; color: #DC8DF2; margin: 200px 0;}
-#Estadistica div{border: 3px solid #DC8DF2; height: 250px; width: 250px;  border-radius: 30px 30px 80px 30px; box-shadow: -15px -15px #83AAF7}
-#Estadistica h2{line-height: 120px;height: 50px;}
-#Estadistica hr{width: 70%; height: 2px; border-color: #DC8DF2;}
+#Estadistica{display: flex; justify-content: space-around; align-items: center; text-align: center; color: #DC8DF2; margin: 12.5em 0;}
+#Estadistica div{border: 0.1875em solid #DC8DF2; height:15.625em; width:15.625em;  border-radius:1.875em 1.875em 5em 1.875em; box-shadow: -0.9375em -0.9375em #83AAF7}
+#Estadistica h2{line-height: 2.125em;height: 1.125em;}
+#Estadistica hr{width: 70%; height: 0.125em; border-color: #DC8DF2;}
 
 /* Garantia */
-#Garantia{display: flex; justify-content: space-between; margin: 150px 0; align-items: center;}
+#Garantia{display: flex; justify-content: space-between; margin: 9.375em 0; align-items: center;}
+#Garantia_texto{width: 50%;}
+#img_inicio3{width: 40%;}
 #Garantia h2{color: #E2F26B;}
-#Garantia img{border-radius: 10px ; height: 300px;}
-#Garantia li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+#Garantia img{border-radius: 0.625em ; width: 100%; height: auto;}
+#Garantia li{font-size: 1.25em; font-weight: 300; margin-bottom: 0.625em;}
 
 
 /* Botones flotantes */
 #Botones_flotantes{position: fixed; z-index: 1; top: 92%; left: 88%;  }
-#Botones_flotantes img{height: 60px; border-radius: 50%;}
-#Botones_flotantes img:nth-child(1){background-color: #E2F26B; padding: 10px;}
-#Botones_flotantes img:nth-child(3){background-color: #9337ef; padding: 15px;}
+#Botones_flotantes img{height: 3.75em; border-radius: 50%;}
+#Botones_flotantes img:nth-child(1){background-color: #E2F26B; padding: 0.625em;}
+#Botones_flotantes img:nth-child(3){background-color: #9337ef; padding: 0.9375em;}
 #Botones_flotantes img:hover{cursor: pointer;}
 
 /* Pasos a seguir */
 #Pasos h2{color: #E2F26B;}
-#Pasos li{font-size: 20px; font-weight: 300; margin-bottom: 10px;}
+#Pasos li{font-size: 1.25em; font-weight: 300; margin-bottom: 0.625em;}
 
 /* Cursos destacados */
-#Destacados {margin-top: 150px; margin-bottom: 100px;}
+#Destacados {margin-top: 9.375em; margin-bottom: 6.25em;}
 
-#Destacados h2{color: #E2F26B; margin-bottom: 50px;}
+#Destacados h2{color: #E2F26B; margin-bottom: 3.125em;}
 
 #Cursos_destacados {display: flex; justify-content: space-between;}
 
-#Cursos_destacados .destacados {background-color: #2B2C32; height: 300px; width: 20%; padding: 30px; border-radius: 5px; }
+#Cursos_destacados .destacados {background-color: #2B2C32; height: 18.75em; width: 20%; padding:1.875em; border-radius: 0.3125em; }
 
-#Cursos_destacados .destacados h3{color: #fff; font-size: 30px; font-weight: 500; margin: 0;}
-#Cursos_destacados .destacados p{font-size: 10px; color: #acacac; line-height: 20px;}
+#Cursos_destacados .destacados h3{color: #fff; font-size:1.875em; font-weight: 500; margin: 0;}
+#Cursos_destacados .destacados p{font-size: 0.625em; color: #acacac; line-height: 1.25em;}
 #Cursos_destacados .destacados span{font-weight: 700;}
-#Cursos_destacados .destacados img {height: 10px;}
+#Cursos_destacados .destacados img {height: 0.625em;}
 
-#Cursos_destacados .destacados button {height: 50px; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 5px; color: #E2F26B;}
+#Cursos_destacados .destacados button {height: 3.125em; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 0,3125em; color: #E2F26B;}
 #Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer; transition: 0.4s;}
 #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
 #Cursos_destacados .destacados .boton_precio a {color: #E2F26B;}
@@ -124,33 +130,199 @@ cursor: pointer;}
 .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
 
 /* Medios de pago */
-#Medios_pago{ background-color: #2B2C32 ; margin: 120px 0; display: flex; justify-content: center; flex-direction: row; height: 150px}
+#Medios_pago{ background-color: #2B2C32 ; margin: 7.5em 0; display: flex; justify-content: center; flex-direction: row; height: 9.375em}
 
 #texto {display: flex;flex-direction: row; justify-content: end; align-items: center; width: 40%;}
-#texto h4{border-right: 1px solid #acacac; padding-right: 10px; font-size: 20px;}
-#texto p {font-size: 12px; padding-left: 10px;}
+#texto h4{border-right: 0,0625em solid #acacac; padding-right: 0.625em; font-size: 1.25em;}
+#texto p {font-size: 0.75em; padding-left: 0.625em;}
 
 #img_pago{display: flex; width: 40%; align-items: center; justify-content: center;} 
-#img_pago img{height: 20px; }
+#img_pago img{height: 1.25em; }
 
 
-/* --------------------------------FOOTER------------------------------------ */
 
-/* footer {width: 70%; margin: auto;} */
-/* Redes */
-/* Colores de los iconos cambiados desde svg */
-/* #redes{display: flex;align-items: center;justify-content: space-between;}
-#redes h2{font-size: 40px; font-family: 'Bruno Ace', cursive; color: #DC8DF2}
-#redes div{display: flex; justify-content: space-around; align-items: center;width: 40%;}
-#redes .img_footer{height: 30px;}
-#redes .img_footer:hover{cursor: pointer;} */
+/* ----------------------------RESPONSIVE-------------------- */
+/* --------------------Celular---------------- */
+@media screen and (max-width: 47em){
+    main{width: 100%;}
+    /* Titulo */
+    #Titulo{text-align: center; color: #fff; margin:15.625em 0;}
+    #Titulo h1{font-size:2.375em; margin:0 0 0.875em}
+    #Titulo p{font-size: 1.25em;}
+    #Titulo button{font-size: 1em;}
 
-/* links */
-/* #links_footer{display: flex; width: 40%;margin: 0 0 80px 0; justify-content: space-between;}
-#links_footer div{display: flex;flex-direction: column;}
-#links_footer h3{font-size: 14px; margin: 7px 0;}
-#links_footer a{color: #83AAF7; margin: 7px 0;} */
+    /*Categorias*/
+    #Categorias {height: auto;margin: 6.25em 0;}
+    #Categorias div{display: grid; grid-template-areas: "a b" "c d" "e f"; margin: 0; grid-template-columns: 1fr 1fr; grid-row-gap: 1em; justify-items: center;}
+    .cat_a{grid-area: a;}
+    .cat_b{grid-area: b;}
+    .cat_c{grid-area: c;}
+    .cat_d{grid-area: d;}
+    .cat_e{grid-area: e;}
+    .cat_f{grid-area: f;}
+    #Categorias .buttons_cat{width: 90%; height: 3.75em; background-color: #DC8DF2;border-radius: 0.375em; border-color: #534e54;}
+    #Categorias a {font-size: 90%;}
 
-/* ayuda */
-/* #ayuda{text-align: center;} */
+    /*  Carrousel */
+    #carrousel img { border-radius: 0.625em; width: 60%; height: auto;}
+    #carrousel { display: flex; justify-content: center; width: 100%;}
 
+    /* Exp aprendizaje */
+    #Experiencia_aprendizaje{ width: 100%;}
+    #Experiencia_aprendizaje { font-size: 80%; }
+    #Experiencia_aprendizaje img{border-radius: 0.625em ; height: 10.75em;}
+    
+
+    /* Career Advisor */
+    
+    #Carrer_advisor{font-size: 80%;}
+    #Carrer_advisor img{border-radius: 0.625em ; height: 10.75em;}
+
+    /* Garantia */
+    #Garantia{font-size: 80%;}
+    #Garantia img{border-radius: 0.625em ; height: 10.75em;}
+
+    /* Pasos a seguir */
+    #Pasos{ font-size: 80%;}
+
+    /* Cursos Destacados */
+    #Destacados {font-size: 90%;}
+    #Destacados h2{ margin-bottom: 1em;}
+    #Cursos_destacados {display: grid; grid-template-areas: "a b" "c d"; grid-template-columns: 1fr 1fr; grid-row-gap: 1em; grid-column-gap: 1em; grid-template-rows: 1fr 1fr; justify-items: center;}
+    .dest_a{grid-area: a;}
+    .dest_b{grid-area: b;}
+    .dest_c{grid-area: c;}
+    .dest_d{grid-area: d;}
+    #Cursos_destacados .destacados {height: 20em; width: 93%; padding:1.875em; border-radius: 1em;  padding-top: 3em;}
+    #Cursos_destacados .destacados p{font-size: 1em;line-height: 1.25em;}
+
+    #Cursos_destacados .destacados button {height: 2em; width: 100%;}
+    #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
+
+    .datos{display: flex; flex-direction:column; justify-content:center; height: 30%;}
+    .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+
+
+    /* Medios de pago */
+    #Medios_pago{  display: flex; justify-content: space-around; flex-direction: row; height: 9.375em}
+
+    #texto {display: flex;flex-direction: row; justify-content: end; align-items: center; width: 60%;}
+
+    #img_pago{display: grid; width:30%; grid-template-areas: "pago_1 pago_2 pago_3" "pago_4 pago_5 pago_7" "pago_6 pago_6 pago_6"; justify-items: center; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 20% 20% 20%; justify-content: center; align-content: center;} 
+    #img_pago img{height: 1em; }
+
+    #pago_1{grid-area: pago_1;}
+    #pago_2{grid-area: pago_2;}
+    #pago_3{grid-area: pago_3;}
+    #pago_4{grid-area: pago_4;}
+    #pago_5{grid-area: pago_5;}
+    #pago_6{grid-area: pago_6;}
+    #pago_7{grid-area: pago_7;}
+
+
+
+    /* Botones flotantes */
+    #Botones_flotantes{display: none;   }
+
+
+    /* Estadistica */
+    #Estadistica{display: grid; text-align: center; margin: 6.25em 0; grid-template-areas: "est1 est2" "est3 est4"; justify-content: end; grid-template-columns: 40% 40%; grid-template-rows: 35% 35%; grid-row-gap: 30%; grid-column-gap: 10%;}
+    #est_1{grid-area: est1;}
+    #est_2{grid-area: est2;}
+    #est_3{grid-area: est3;}
+    #est_4{grid-area: est4;}
+    #Estadistica div{height:10em; width:100%;}
+    #Estadistica h2{line-height: 1.125em;height:.5em; font-size: 2em;}
+    #Estadistica p{font-size: 1.5em;}
+}
+
+
+/* ------------------Tablet -------------*/
+@media screen and (min-width: 47em) and (max-width: 70em){
+    /* Titulo */
+    #Titulo{text-align: center; color: #fff; margin:15.625em 0; }
+    #Titulo h1{font-size:3.375em; margin:0 0 0.875em;}
+    #Titulo p{font-size: 1.25em;}
+
+    /*Categorias*/
+    #Categorias {height: auto;margin: 6.25em 0;}
+    #Categorias div{display: grid; grid-template-areas: "a b c" "d e f"; margin: 0; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr; grid-row-gap: 1em;}
+    .cat_a{grid-area: a;}
+    .cat_b{grid-area: b;}
+    .cat_c{grid-area: c;}
+    .cat_d{grid-area: d;}
+    .cat_e{grid-area: e;}
+    .cat_f{grid-area: f;}
+    #Categorias .buttons_cat{width: 90%; height: 3.75em; background-color: #DC8DF2;border-radius: 0.375em; border-color: #534e54;}
+    #Categorias a {font-size: 100%;}
+
+    /*  Carrousel */
+    #carrousel img { border-radius: 0.625em; width: 60%; height: auto;}
+    #carrousel { display: flex; justify-content: center; width: 100%;}
+
+    /* Experiencia aprendizaje */
+    #Experiencia_aprendizaje{ width: 100%;}
+    #Experiencia_aprendizaje { font-size: 90%; }
+    #Experiencia_aprendizaje img{border-radius: 0.625em ; height: 10.75em;}
+    
+    /* Career Advisor */
+    
+    #Carrer_advisor{font-size: 90%;}
+    #Carrer_advisor img{border-radius: 0.625em ; height: 10.75em;}
+
+    /* Garantia */
+    #Garantia{font-size: 90%;}
+    #Garantia img{border-radius: 0.625em ; height: 10.75em;}
+
+    /* Pasos a seguir */
+    #Pasos{ font-size: 90%;}
+
+    /* Cursos Destacados */
+    #Destacados {font-size: 90%;}
+    #Destacados h2{ margin-bottom: 1em;}
+    #Cursos_destacados {display: grid; grid-template-areas: "a b" "c d"; grid-template-columns: 1fr 1fr; grid-row-gap: 1em; grid-column-gap: 1em; grid-template-rows: 1fr 1fr; justify-items: center;}
+    .dest_a{grid-area: a;}
+    .dest_b{grid-area: b;}
+    .dest_c{grid-area: c;}
+    .dest_d{grid-area: d;}
+    #Cursos_destacados .destacados {height: 20em; width: 93%; padding:1.875em; border-radius: 1em;  padding-top: 3em;}
+    #Cursos_destacados .destacados p{font-size: 1em;line-height: 1.25em;}
+
+    #Cursos_destacados .destacados button {height: 3em; width: 100%; font-size: 1.3em;}
+    #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
+
+    .datos{display: flex; flex-direction:column; justify-content:center; height: 30%;}
+    .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+
+    /* Medios de pago */
+    #Medios_pago{  display: flex; justify-content: space-around; flex-direction: row; height: 9.375em}
+
+    #texto {display: flex;flex-direction: row; justify-content: end; align-items: center; width: 60%;}
+    #texto p{font-size: 90%;}
+
+    #img_pago{display: grid; width:30%; grid-template-areas: "pago_1 pago_2 pago_3" "pago_4 pago_5 pago_7" "pago_6 pago_6 pago_6"; justify-items: center; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 20% 20% 20%; justify-content: center; align-content: center;} 
+    #img_pago img{height: 1em; }
+
+    #pago_1{grid-area: pago_1;}
+    #pago_2{grid-area: pago_2;}
+    #pago_3{grid-area: pago_3;}
+    #pago_4{grid-area: pago_4;}
+    #pago_5{grid-area: pago_5;}
+    #pago_6{grid-area: pago_6;}
+    #pago_7{grid-area: pago_7;}
+
+    /* Botones flotantes */
+    #Botones_flotantes{display: none;   }
+
+
+    /* Estadistica */
+    #Estadistica{display: grid; text-align: center; margin: 6.25em 0; grid-template-areas: "est1 est2" "est3 est4"; justify-content: end; grid-template-columns: 40% 40%; grid-template-rows: 35% 35%; grid-row-gap: 30%; grid-column-gap: 10%;}
+    #est_1{grid-area: est1;}
+    #est_2{grid-area: est2;}
+    #est_3{grid-area: est3;}
+    #est_4{grid-area: est4;}
+    #Estadistica div{height:10em; width:100%;}
+    #Estadistica h2{line-height: 1.125em;height:.5em; font-size: 2em;}
+    #Estadistica p{font-size: 1.5em;}
+
+}
