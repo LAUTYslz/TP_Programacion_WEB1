@@ -71,7 +71,7 @@ footer {width: 80%; margin: auto;}
 /* -------------------------------------RESPONSIVE-------------------------------------- */
 @media screen and (max-width: 47em){
     body{
-       font-size: 80%;
+       font-size: 70%;
     }
     /* ----------------------Header--------------------------- */
     header{font-size: 90%}
@@ -108,7 +108,7 @@ footer {width: 80%; margin: auto;}
 
    /* Tablet */
 @media screen and (min-width: 48em) and (max-width: 70em){
-    body{
+    header{
        font-size: 80%;
    }
     /*--------------------------header--------------------------------  */
@@ -120,9 +120,11 @@ footer {width: 80%; margin: auto;}
     /* .lupa{display: block;} */
     /* #carrito_buscador input{ display: none;} */
 
+    /*------------------------- Main--------------------------  */
+    main{width: 80%;}
 
    /*-------------------------- Footer -------------------------*/
-   footer{ width: 80%;}
+   footer{ width: 80%; font-size: 80%;}
    /* Redes */
    #redes{ display: flex; flex-direction: column;}
    #redes div { display: flex; justify-content:space-evenly; width: 90%;}

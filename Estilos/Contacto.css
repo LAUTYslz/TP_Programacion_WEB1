@@ -1,25 +1,63 @@
 
 /* Formulario */
 
-h1{color: #fff; font-size: 70px; margin: 80px 0;}
+h1{color: #fff; font-size: 5em; margin: 1em 0;}
 
-#formulario {display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 100px;}
+#formulario {display: flex; flex-direction: row; justify-content: space-between; margin-bottom: 6.25em;}
 
 form{display: flex; flex-direction: column; width: 40%;}
 
-#formulario input{ width: 70%; height: 3em; border-radius: 10px; margin-bottom: 30px;}
-#formulario button{ width: 30%; height: 2em; border-radius: 10px; color: black; font-size: 20px; margin-top: 30px; background-color: #E2F26B;}
+#formulario input{ width: 70%; height: 3em; border-radius: 0.625em; margin-bottom: 1.875em;}
+#formulario button{ width: 30%; height: 2em; border-radius: 0.625em; color: black; font-size: 1.25em; margin-top: 1.875em; background-color: #E2F26B;}
 #formulario button:hover{cursor: pointer; background-color: #E2F26B; transition: 0.5s; color: #DC8DF2;}
 
-label { font-size: 25px; color: #DC8DF2;}
+label { font-size: 1.5625em; color: #DC8DF2;}
 
-textarea{border-radius: 10px;}
+textarea{border-radius: 0.625em;}
 
 /* Mapa */
 
 h2{color: #E2F26B;}
-#ubicacion {display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 100px;}
-#ubicacion iframe{width: 70%;}
+#ubicacion {display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 6.25em;  height: auto;}
+#ubicacion iframe{width: 70%; height: 20em;}
 
 
+/* --------------------------------------------------------- */
+/* -----------------------RESPONSIVE------------------------ */
 
+/* Telefono */
+@media screen and (max-width: 47em){
+    /* Formulario */
+    h1{font-size: 4em; margin-bottom: .2em;}
+    #formulario {margin-bottom: 3em;}
+    #formulario{font-size: 80%;}
+    #formulario {flex-direction: column; justify-content: space-between;}
+    #formulario form{width: 100%;}
+    #formulario input{ width: 70%; height: 2em; border-radius: 0.625em; }
+    #formulario textarea{ width: 70%; height: 4em;}
+
+    /* Mapa */
+
+    h2{color: #E2F26B;}
+    #ubicacion {display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 5em;}
+    #ubicacion iframe{width: 90%; height: auto;}
+}
+
+
+/* Tablet */
+@media screen and (min-width: 48em) and (max-width: 70em){
+     /* Formulario */
+     h1{font-size: 4em; margin-bottom: .2em;}
+     #formulario {margin-bottom: 3em;}
+     #formulario{font-size: 80%;}
+     #formulario {flex-direction: column; justify-content: space-between;}
+     #formulario form{width: 100%;}
+     #formulario input{ width: 70%; height: 2em; border-radius: 0.625em; }
+     #formulario textarea{ width: 70%; height: 4em;}
+ 
+     /* Mapa */
+ 
+     h2{color: #E2F26B;}
+     #ubicacion {display: flex; justify-content: center; flex-direction: column; align-items: center; margin-bottom: 5em; height: auto;}
+     #ubicacion iframe{width: 80%; height: 15em;}
+}
