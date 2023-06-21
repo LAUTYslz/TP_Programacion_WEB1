@@ -1,6 +1,21 @@
 
+:root{
+    --color-gris:#2B2C32;
+    --color-gris-borde:#2f2f4a;
+    --color-play:#a333e9;
+}
+
 main{
     width: 100% !important;
+}
+
+body{
+    font-size:100%;
+}
+
+p{
+    font-size: 1.3em;
+    line-height: 1.3em;
 }
 
 
@@ -93,25 +108,86 @@ main{
 /*CONTENIDOS POR CLASE*/
 
 #contenidos-por-clase {
-    width: 50%;
+    max-width: 75%;
     margin: auto;
     margin-top: 12.5em;
     /* padding: 3.125em; */
 }
+
 
 #contenidos-por-clase h2{
     text-align: center;
     color: #E2F26B;
 }
 
-#contenidos-por-clase h3 {
-    padding: 0.625em 0em;
-    color: #dc8df2ca;
-    font-size: 1.875em;
+#tarjeta_contenidos_por_clase{
+    border:0.0001em solid var(--color-gris-borde);
+    background-color: var(--color-gris);
 }
 
+#contenidos-por-clase h3 {
+    padding: 0.625em 0.8em;
+    color: #dc8df2ca;
+    font-size: 1.875em;
+    border:0.0001em solid var(--color-gris-borde);
+    margin: 0em;
+}
+/* Acordeon */
+.acordeon-cabecera {
+    cursor: pointer;
+    font-weight: 600;
+  }
+
+.acordeon-cabecera:hover{
+    background-color: rgb(36 36 36);
+}
+  .acordeon-contenido {
+    display: none;
+  }
+  
+.acordeon-contenido__ul{
+    margin:0;
+    padding: 0 0.2em 0 0.2em;
+    font-size: 1.4em;
+}
+
+.acordeon-contenido__li{
+    display: flex;
+    justify-content: space-between;
+    margin:0.4em;
+    padding: 0.1em;
+    
+    border-radius: 0.5em;
+}
+
+.acordeon-contenido__li:hover{
+    background-color: #313436;
+}
+
+.acordeon-contenido__spam{
+    display:flex;
+    gap:0.5em;
+}
+
+spam{
+    line-height: 1.5em;
+}
+
+
+
+.play-color{
+    font-size: 0.9em;
+    color: var(--color-play);
+    padding:0.2em 0.2em 0 0.2em ; 
+}
+
+.padding_left{padding-left: 1.5em}
+
+
+
+
 #lista-de-contenidos-del-curso{
-    border: 0.125em solid #534e54;
+    border: 0.125em solid #32314d;
     padding: 1.875em;
 }
 
@@ -237,6 +313,16 @@ main{
 
     #imagen-conteiner{
         width: 90%;
+    } 
+
+    #conteiner-carta-profesor {
+        justify-content: space-around;
+    }
+    
+    #imagen-conteiner-profesor {
+        
+        width: 6em;
+        height: 10em;
     }
 
 
@@ -247,9 +333,16 @@ main{
         flex-wrap: wrap;
         }
 
-#Cursos_destacados .destacados p{
-    font-size: 0.825em; 
+    #Cursos_destacados .destacados p{
+        font-size: 0.825em; 
     }
+    
+    
+    /*Acordeon*/
+    #contenidos-por-clase {
+        max-width: 90%;
+    }
+
 } 
 
 @media screen and (max-width:48em){/* tablet */
@@ -265,13 +358,14 @@ main{
     }
 
     #imagen-conteiner-profesor {
-        width: 9.8em;
+        width: 8.8em;
     }
 
     #imagen-conteiner-profesor .fa-user-tie {
-        font-size: 5.25em;
+        font-size: 4em;
         
     }
+    
 
 /* CURSOS RELACIONADOS */
 
@@ -297,11 +391,6 @@ main{
         width: 6.0em;
     }
 
-    #imagen-conteiner-profesor .fa-user-tie {
-        font-size: 4.20em;
-        
-    }
-
 
 /* CURSOS RELACIONADOS */
 
@@ -324,6 +413,20 @@ main{
     }
 
 
+/* Profesor */
+    #imagen-conteiner-profesor {
+        width: 8.8em;
+        justify-content: space-between;
+    }
+
+    #imagen-conteiner-profesor .fa-user-tie {
+        font-size: 3.2em;
+        
+    }
+
+    #conteiner-datos-profesor {
+        width: 117%;
+    }
 
 }
 
