@@ -56,46 +56,36 @@ p{
 .NaNem{font-size: 1.5625em;}
 .NaNem{padding: 0.5em;}
 
-#informacion-curso a {
+#informacion-curso__inscribirse {
 
     text-decoration: none;
     color: #1F1F22;
     background-color: #E2F26B;  
 
     border-radius: 0.625em;
-    width: 9.375em;
+    width: 7.37em;
     text-align: center;
-    font-size: 1.25em;
-    line-height: 2.5em;
+    font-size: 1.55em;
+    line-height: 1.7em;
+
+    cursor: pointer;
 }
+
 
 #informacion-curso a:hover{
     background-color: #e2f26be6;
     transition: 0.2s;
 }
 
-.modal{
-    height: 25em;
-    width: 56.25em;
-    display: flex;
-    flex-direction: column;
-    background-color: #2a3a41;
-}
-.modal__java{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-.texto-centrado{text-align: center;}
-.NaNem{height: 7.5em;}
-.NaNem{font-size: 2.1875em;}
 
-.ocultar{display: none;}
+.t25px{font-size: 1.5625em;}
+.padding8px{padding: 0.5em;}
+
 
 #imagen-conteiner{
     width: 37%;
     position: relative;
-   /*  overflow: hidden; */
+    /*  overflow: hidden; */
 }
 
 #imagen-conteiner img {
@@ -105,7 +95,62 @@ p{
     border-radius: 0.625em;
 }
 
-/*CONTENIDOS POR CLASE*/
+
+/* ------------  MODAL---------- */
+.section-modal{ 
+    position: fixed; /* ocupa toda la pantalla visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.modal{
+    margin: auto;
+    height: 25em;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a3a41;
+    position: relative;
+    
+
+}
+.texto-centrado{text-align: center;}
+
+.modal__java{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ocultar{display: none;}
+
+.img-tamanio{
+    width: 12em;
+}
+
+.icono_cerrar{
+    position: absolute;
+    top: 0.9em;
+    right: 0.4em;
+
+    cursor: pointer;
+}
+.icono_cerrar:hover{
+    color: red;
+}
+
+
+/* .NaNem{height: 7.5em;}
+.NaNem{font-size: 2.1875em;} */
+
+
+
+/*--CONTENIDOS POR CLASE ------*/
 
 #contenidos-por-clase {
     max-width: 75%;
@@ -132,7 +177,7 @@ p{
     border:0.0001em solid var(--color-gris-borde);
     margin: 0em;
 }
-/* Acordeon */
+/* ------------------Acordeon -------------*/
 .acordeon-cabecera {
     cursor: pointer;
     font-weight: 600;
@@ -211,7 +256,7 @@ spam{
 
 .examenes{margin: 0.625em 0;}
 
-/*DATOS DEL PROFESOR*/
+/*---------------------DATOS DEL PROFESOR---------------*/
 
 #informacion-del-profesor{/* Section */
     margin: auto;
@@ -299,6 +344,9 @@ spam{
 .datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}
 .precio{ height: 38%; padding-bottom: 10%;}
 
+
+
+/* ----------------------------RESPONSIVE----------------------*/
 
 @media screen and (max-width:64em){/* pc */
     body{
