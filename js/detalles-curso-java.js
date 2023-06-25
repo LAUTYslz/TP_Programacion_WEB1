@@ -5,7 +5,6 @@ let iconoCerrar = document.querySelector(".icono_cerrar");
 
 
 inscribirse.addEventListener("click",()=>{
-  
     modal.classList.remove("ocultar");
 });
 

@@ -14,7 +14,7 @@ body{
 }
 
 p{
-    font-size: 1.3em;
+    font-size: 1.8em;
     line-height: 1.3em;
 }
 
@@ -41,7 +41,9 @@ p{
     font-size: 1.875em;
 }
 
-#informacion-curso li{ font-size: 1.25em;}
+#informacion-curso li{ font-size: 1.7em; line-height: 1.2em;}
+
+
 
 #informacion-curso #destacado {
     font-weight: bold;
