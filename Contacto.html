@@ -56,14 +56,30 @@
                     <label for="apellido">Apellido</label>
                     <input type="text" name="apellido" id="apellido" required>
                     <label for="mail">Correo</label>
-                    <input type="email" name="mail" id="mail" required>
+                    <input type="text" name="mail" id="mail" required>
                     <label for="telefono">Teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" required>
-                    <label for="mensaje">Mensaje</label>
-                    <textarea name="mensaje" id="mensaje" cols="30" rows="10" minlength="50"></textarea>
-                    <button type="submit">Enviar</button>
+                    <input type="text" name="telefono" id="telefono" required>
+                    <label for="consulta">Consulta</label>
+                    <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="1000"></textarea>
+                    <p id="contador"></p>
+                    <div id="mensaje" class="error">
+                
+                    </div>
+                    <input type="submit" value="Enviar" id="button">
                 </form>
 
+            </section>
+
+            <section id="contenedor_pop">
+                <div id="popup" class="hidden">
+                    <h2>Consulta enviada</h2>
+                    <button id="btnAceptar"><a href="index.html">Aceptar</a></button>
+                </div>
+            </section>
+            
+
+            <section id="mensaje" class="error">
+                
             </section>
 
             <section id="ubicacion">
@@ -119,5 +135,7 @@
             </section>
             <hr>
         </footer>
+
+        <script src="js/Contacto.js"></script>
     </body>
 </html>
