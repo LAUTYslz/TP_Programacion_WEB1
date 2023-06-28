@@ -47,48 +47,66 @@
             <article>
                 <form action="#" method="get" enctype="application/x-www-form-urlencoded"
                     class="formulario_inscripcion">
-                    <div>
-                        <label for="primer_nombre"></label>
-                        <input type="text" id="primer_nombre" name="nombre" placeholder="Nombre" required>
+                    <div class="formulario_inscripcion__div" >
+                        <input class="input inputs" type="text" id="nombre" name="nombre" placeholder="Nombre" required>
 
-                        <label for="primer_apellido"></label>
-                        <input type="text" id="primer_apellido" name="apellido" placeholder="Apellido" required>
+                        <input  class="input inputs" type="text" id="apellido" name="apellido" placeholder="Apellido" required>
 
-                        <label for="primer_dni"></label>
-                        <input type="number" id="primer_dni" name="dni" placeholder="DNI" required>
+                        <input  class="input inputs" type="number" id="dni" name="dni" placeholder="DNI" required>
 
-                        <span class="material-symbols-outlined quitar">
+                        
+                        <input  class="input inputs" type="email" id="email" name="email" placeholder="Email" required>
+
+                        <input  class="input inputs" type="number" id="telefono" name="telefono" placeholder="Telefono" required>
+
+                        <span class="material-symbols-outlined quitarValores">
                             do_not_disturb_on
                         </span>
                     </div>
-                    <div>
-                        <label for="segundo_nombre"></label>
-                        <input type="text" id="segundo_nombre" name="nombre" placeholder="Nombre" required>
-                        <label for="segundo_apellido"></label>
-                        <input type="text" id="segundo_apellido" name="apellido" placeholder="Apellido" required>
-                        <label for="segundo_dni"></label>
-                        <input type="number" id="segundo_dni" name="dni" placeholder="DNI" required>
-                        <span class="material-symbols-outlined quitar">
-                            do_not_disturb_on
-                        </span>
+
+                    <div class="contenedor">
+
                     </div>
-                    <div>
-                        <label for="tercer_nombre"></label>
-                        <input type="text" id="tercer_nombre" name="nombre" placeholder="Nombre" required>
-                        <label for="tercer_apellido"></label>
-                        <input type="text" id="tercer_apellido" name="apellido" placeholder="Apellido" required>
-                        <label for="tercer_dni"></label>
-                        <input type="number" id="tercer_dni" name="dni" placeholder="DNI" required>
-                        <span class="material-symbols-outlined quitar">
-                            do_not_disturb_on
-                        </span>
+                    <div class="contenedor_de_agregar_inscribirse">
+                        <div class="display_flex_direccion_left">
+                            <div class="p__bloque-agregar-persona">
+                                <span class="material-symbols-outlined mas simbolo_agregar">add_circle</span>
+                                <p class="texto_agregar_persona">  Agregar persona</p>
+                             </div>
+                        </div>
+                           
+                        <div class="display_flex_direccion_left">
+                            <div class="p__bloque-inscribisrse">
+                                <p class="totalPesos">$ 10.000 ARS</p> 
+                                <button type="submit" class="inscribirse">INSCRIBIRSE</button>
+                            </div>
+                        </div>   
+                    
                     </div>
-                    <p class="p__bloque-agregar-persona"><span class="material-symbols-outlined mas">
-                            add_circle
-                        </span>Agregar persona</p>
-                    <p class="p__bloque-inscribisrse">$ 10.000 ARS<button type="submit" class="inscribirse">INSCRIBIRSE</button></p>
+                   
+
+                   
                 </form>
             </article>
+            <div class="section-modal ocultar" >
+                <div class="modal">
+          
+                   <h2 class="texto-centrado">¡Felicitaciones!</h2>
+                   <p class="texto-centrado">Se añadio al carrito</p>
+          
+                   <div class="modal__java">
+                     
+                     <p class="t35px"> Java desde cero</p>
+                     <p class="padding8px">$15400 ARS </p>
+                   </div>
+          
+                   <div>
+                      <i class="fa-sharp fa-solid fa-circle-xmark fa-2xl icono_cerrar"></i>
+                   </div>
+                   
+                </div>
+          
+            </div>
         </section>
     </main>
 <hr>
@@ -136,7 +154,7 @@
         <hr>
     </footer>
 
-
-
+    <script src="https://kit.fontawesome.com/a52b387a60.js" crossorigin="anonymous"></script>
+    <script src="js/formulario-inscripcion.js"></script>
 </body>
 </html>

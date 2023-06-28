@@ -1,41 +1,52 @@
 /* /////////////// Estilos y clases INSCRIPCIÓN /////////////// */
 
+main{width: 90% !important;}
+
 .seccion_inscripcion {
     display: flex;
     flex-direction: column;
-    padding-bottom: 100px;
+    padding-bottom: 6.25em;
     width: 100%;
+    
+}
+
+article{
+    width: 80%;
+    margin: auto;
+}
+
+.titulos{
+    padding-left: 1.5em;
 }
 
 .titulos h1 {
-    width: 50%;
-    /* padding-left: 25px; */
-    /* text-transform: uppercase; */
-    font-size: 70px;
-    margin: 100px 0px 20px 0px;
+    width: 100%;
+    font-size: 4em;
+    margin: 1.3em 0em 1em 0em;
 }
 
 .titulos h2 {
-    width: 30%;
-    /* padding-left: 27px; */
-    margin: 30px 0px 10px 0px;
-    font-size: 30px;
+    width: 100%;
+    /* padding-left: 1.6875em; */
+    margin: 1em 0em 1.4em 0em;
+    font-size: 2em;
 }
 
 .formulario_inscripcion {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
+    gap: 1.25em;
 }
 
 
 .formulario_inscripcion input {
     font-size: x-large;
-    border-radius: 8px;
-    border: 2px solid white;
-    padding: 8px;
+    border-radius: 0.5em;
+    border: 0.125em solid white;
+    padding: 0.5em;
     outline: none;
+    width: 9em;
 }
 
 .formulario_inscripcion input:focus {
@@ -44,33 +55,73 @@
     background-color: #d5ffca;
 }
 
-.formulario_inscripcion div {
+.formulario_inscripcion__div {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 15px;
+    gap: 0.9375em;
+    
 }
+
+#dni{width: 7em;}
+#email{width: 15em;}
+
 
 
 .formulario_inscripcion p {
-    font-size: x-large;
+    font-size:1.8em;
     font-weight: bold;
-    margin-top: 10px;
+   /*  margin-top: 0.625em; */
     display: flex;
     align-items: center;
-    gap: 22px;
+    gap: 1.375em;
 }
-.p__bloque-agregar-persona{  position: relative; right: 312px;}
-.p__bloque-inscribisrse{position: relative;right: 264px;}
+
+
+.texto_agregar_persona{
+    margin: auto;
+    
+}
+
+.contenedor_de_agregar_inscribirse {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.display_flex_direccion_left {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.p__bloque-agregar-persona{ 
+    display: flex;
+    margin:1.5em;
+    
+}
+.p__bloque-inscribisrse{
+    display: flex;
+    margin: 1.5em;
+}
+
+
+.totalPesos{
+    margin: 0 1.25em 0 0;
+    font-size: 1.8em;
+
+}
 
 .inscribirse {
     background-color: rgb(0 179 255);
     font-family: inherit;
     font-size: x-large;
-    padding: 7px;
-    border-radius: 10px;
-    border: 2px solid rgb(103 173 224);
+    padding: 0.4375em;
+    border-radius: 0.625em;
+    border: 0.125em solid rgb(103 173 224);
+
+    cursor: pointer;
 }
 
 .inscribirse:hover {
@@ -79,15 +130,35 @@
     transition-duration: 0.7s;
 }
 
+.contenedor{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
 .quitar {
     font-size: initial;
     background-color: rgb(255, 14, 14);
     color: white;
     border-radius: 50%;
-    padding: 1px;
+    padding: 0.0625em;
+}
+.quitarValores{
+    font-size: initial;
+    background-color: rgb(255, 14, 14);
+    color: white;
+    border-radius: 50%;
+    padding: 0.0625em;
 }
 
 .quitar:hover {
+    transform: rotate(180deg);
+    background-color: #333;
+    color: white;
+    transition-duration: 0.5s;
+    cursor: pointer;
+}
+.quitarValores:hover {
     transform: rotate(180deg);
     background-color: #333;
     color: white;
@@ -100,9 +171,14 @@
     background-color: rgb(102, 255, 14);
     color: #333;
     border-radius: 50%;
-    padding: 1px;
-    border: 2px solid black;
-    box-shadow: 2px 2px 5px black;
+    padding: 0.1em;
+    margin: 0.4em;
+    border: 0.125em solid black;
+    box-shadow: 0.125em 0.125em 0.3125em rgb(40, 38, 38);
+}
+
+.simbolo_agregar{
+    cursor: pointer;
 }
 
 .mas:hover {
@@ -111,3 +187,50 @@
     transition-duration: 0.5s;
     cursor: pointer;
 }
+
+/****** SECCION MODAL*****/
+
+.section-modal{ 
+    position: fixed; /* ocupa toda la pantalla visible */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+}
+
+.modal{
+    margin: auto;
+    height: 25em;
+    width: 50em;
+    display: flex;
+    flex-direction: column;
+    background-color: #2a3a41;
+    position: relative;
+
+}
+.texto-centrado{text-align: center;}
+
+.modal__java{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.ocultar{display: none;}
+
+
+.icono_cerrar{
+    position: absolute;
+    top: 0.9em;
+    right: 0.4em;
+
+    cursor: pointer;
+}
+.icono_cerrar:hover{
+    color: red;
+}
+
+
