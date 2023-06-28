@@ -8,11 +8,12 @@ let totalPesos = document.querySelector(".totalPesos");
 
 let botonInscribirse = document.querySelector(".inscribirse");
 
-let modal = document.querySelector(".section-modal");
-let iconoCerrar = document.querySelector(".icono_cerrar"); 
+let sectionModal = document.querySelector(".section-modal");
 
-let formulario_inscripcion__div = document.querySelector(".formulario_inscripcion__div");
 
+let inputs = document.querySelectorAll(".inputs");
+
+let modal = document.querySelector(".modal");
 
 
 quitarValores.addEventListener("click", (e)=> {
@@ -21,24 +22,89 @@ quitarValores.addEventListener("click", (e)=> {
     });
 });
 
-function funcionInscripcion(e){
+function funcionInscripcion(e, formulario_inscripcion__div){
     let inputs = document.querySelectorAll(".inputs");
+    /* e.preventDefault(); */
     
+
+    modal.innerHTML=` 
+        <h2 class="texto-centrado">Personas Inscriptas</h2>
+        <div class="modal__java">
+            
+
+        </div>
+        <div>
+            <i class="fa-sharp fa-solid fa-circle-xmark fa-2xl icono_cerrar"></i>
+        </div>
+    `
+    
+    let modalJAva = document.querySelector(".modal__java");
+    modalJAva.innerHTML="";
+
+
+    formulario_inscripcion__div.forEach((item)=>{
+      /*   console.log(item); */
+
+      let valorNombre = "";
+      let valorApellido = "";
+      let valorDni = "";
+
+      item.childNodes.forEach((itemInput)=>{
+
+       
+        
+
+        if(itemInput.id=="nombre"){
+            valorNombre = itemInput.value;
+        }
+        if(itemInput.id=="apellido"){
+            valorApellido = itemInput.value;
+        }
+        if(itemInput.id=="dni"){
+            valorDni = itemInput.value;
+        }
+
+        });
+
+        modalJAva.innerHTML+=`
+
+        <div class="nodoContenedorDeInscriptos">
+
+            <p class="nombre-apellido">${valorNombre} ${valorApellido}</p>
+            <p class="dni-nuevo">${valorDni} </p>
+
+        </div>
+        
+        `
+        
+        
+        
+    });
+
     let contador = 0;
     inputs.forEach((item)=>{
 
         if(item.value ==""){
             contador++;
         }
-
     });
 
+
+
     if(contador==0){
-        console.log(contador);
+        /* console.log(contador); */
         e.preventDefault();
-        modal.classList.remove("ocultar");
+        sectionModal.classList.remove("ocultar");
     }
+
+    let iconoCerrar = document.querySelector(".icono_cerrar"); 
+    iconoCerrar.addEventListener("click", (e)=>{
+        sectionModal.classList.add("ocultar");
+    });
+
+    
 }
+
 
 agregar.addEventListener("click", (e)=>{
     //1- Agregamos campos para una persona
@@ -82,21 +148,23 @@ agregar.addEventListener("click", (e)=>{
     var pesosTotales = 10000*cantidadNodosHijos;
     totalPesos.innerHTML=`$${pesosTotales} ARS`;
 
-    
-    botonInscribirse.addEventListener("click", function(e){
-        funcionInscripcion(e)
-    });
+
     
 });
+
 
 botonInscribirse.addEventListener("click", function(e){
-    funcionInscripcion(e)
+
+    let formulario_inscripcion__div = document.querySelectorAll(".formulario_inscripcion__div");
+    funcionInscripcion(e, formulario_inscripcion__div);
 });
 
 
-iconoCerrar.addEventListener("click", (e)=>{
-    modal.classList.add("ocultar");
-});
+ /* botonInscribirse.addEventListener("click", function(e){
+    funcionInscripcion(e, formulario_inscripcion__div);
+}); */
+
+
 
 
 

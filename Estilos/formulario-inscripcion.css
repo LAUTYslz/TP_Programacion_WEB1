@@ -1,5 +1,7 @@
 /* /////////////// Estilos y clases INSCRIPCIÓN /////////////// */
 
+body{font-size: 100%;}
+
 main{width: 90% !important;}
 
 .seccion_inscripcion {
@@ -11,12 +13,12 @@ main{width: 90% !important;}
 }
 
 article{
-    width: 80%;
+    width: 85%;
     margin: auto;
 }
 
 .titulos{
-    padding-left: 1.5em;
+    /* padding-left: 1.5em; */
 }
 
 .titulos h1 {
@@ -35,13 +37,13 @@ article{
 .formulario_inscripcion {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    gap: 1.25em;
+    /* align-items: center; */
+    gap: 2.5em;
 }
 
 
 .formulario_inscripcion input {
-    font-size: x-large;
+    font-size: 1.5em;
     border-radius: 0.5em;
     border: 0.125em solid white;
     padding: 0.5em;
@@ -58,7 +60,7 @@ article{
 .formulario_inscripcion__div {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    /* justify-content: center; */
     align-items: center;
     gap: 0.9375em;
     
@@ -67,7 +69,7 @@ article{
 #dni{width: 7em;}
 #email{width: 15em;}
 
-
+#telefono{width: 10.6em;}
 
 .formulario_inscripcion p {
     font-size:1.8em;
@@ -98,12 +100,12 @@ article{
 
 .p__bloque-agregar-persona{ 
     display: flex;
-    margin:1.5em;
+    margin:1em 0 0 0;
     
 }
 .p__bloque-inscribisrse{
     display: flex;
-    margin: 1.5em;
+    margin: 1.5em 0 0 0;
 }
 
 
@@ -116,7 +118,7 @@ article{
 .inscribirse {
     background-color: rgb(0 179 255);
     font-family: inherit;
-    font-size: x-large;
+    font-size: 1.2em;
     padding: 0.4375em;
     border-radius: 0.625em;
     border: 0.125em solid rgb(103 173 224);
@@ -133,7 +135,7 @@ article{
 .contenedor{
     display: flex;
     flex-direction: column;
-    gap: 1em;
+    gap: 2.5em;
 }
 
 .quitar {
@@ -203,7 +205,7 @@ article{
 
 .modal{
     margin: auto;
-    height: 25em;
+    /* height: 25em; */
     width: 50em;
     display: flex;
     flex-direction: column;
@@ -211,12 +213,14 @@ article{
     position: relative;
 
 }
-.texto-centrado{text-align: center;}
+.texto-centrado{text-align: center;margin: 0.7em;}
 
 .modal__java{
+    margin:0 auto;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-around;
+    width: 35em;
 }
 
 .ocultar{display: none;}
@@ -231,6 +235,58 @@ article{
 }
 .icono_cerrar:hover{
     color: red;
+}
+
+.nodoContenedorDeInscriptos{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nombre-apellido, .dni-nuevo{
+
+    margin: 0.5em 0.5em;
+}
+
+
+
+
+/* Responsive */
+
+@media screen and (max-width:64em ){/* pc */
+    body{
+        font-size: 90%;
+    }
+    main{
+        width: 100% !important;
+    }
+    article{
+        width: 90%;
+    }
+}
+
+
+
+@media screen and (max-width:48em ){/* tablet */
+    body{
+        font-size: 85%;
+    }
+    main{
+        width: 100% !important;
+    }
+    article{
+        width: 90%;
+    }
+    input{
+        width: 5em;
+    }
+
+    .formulario_inscripcion input {
+        
+        padding: 0.5em;
+        width: 11em;
+    }
+
+
 }
 
 
