@@ -28,7 +28,7 @@ h2{color: #E2F26B;}
 /* Telefono */
 @media screen and (max-width: 47em){
     /* Formulario */
-    h1{font-size: 4em; margin-bottom: .2em;}
+    h1{font-size: 3.5em; margin-bottom: .2em;}
     #formulario {margin-bottom: 3em;}
     #formulario{font-size: 80%;}
     #formulario {flex-direction: column; justify-content: space-between;}
