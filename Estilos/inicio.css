@@ -49,16 +49,18 @@ nav a{font-size: 1.25em; color: #fff;}
 
 /*Categorias*/
 #Categorias {height: auto;margin: 6.25em 0;}
-#Categorias div{display: flex; justify-content:space-between; align-items: flex-start; margin: 0;}
-#Categorias .buttons_cat{width: 11.25em; height: 3.75em; background-color: #DC8DF2;border-radius: 0.375em; border-color: #534e54;
+#Categorias div{display: flex; justify-content:space-around; align-items: flex-start; margin: 0;}
+#Categorias .buttons_cat{width: 10%; height: 3.75em; background-color: #DC8DF2;border-radius: 0.375em; border-color: #534e54;
     /* background-image: linear-gradient(to right bottom, #DC8DF2,#59aff5); */
 cursor: pointer;}
 #Categorias .buttons_cat:hover{background: #dc8df2ca; box-shadow: 0 -0.1875em 1.25em #A79BF2; transition: 0.5s;}
 #Categorias a{color: #fff}
 
 /*  Carrousel */
-#carrousel img { border-radius: 0.625em; width: 50%; height: auto;}
-#carrousel { display: flex; justify-content: center; width: 100%;}
+
+#carrousel img { border-radius: 0.625em; width: 100%; height: auto;}
+#carrousel { display: flex; justify-content: center; width: 60%; margin: auto;}
+
 
 /* Escuelas */
 #Escuelas{ border: 0.1875em solid #E2F26B; text-align: center; margin: 7.5em 0;}
@@ -114,7 +116,7 @@ cursor: pointer;}
 
 #Cursos_destacados {display: flex; justify-content: space-between;}
 
-#Cursos_destacados .destacados {background-color: #2B2C32; height: 18.75em; width: 20%; padding:1.875em; border-radius: 0.3125em; }
+#Cursos_destacados .destacados {background-color: #2B2C32; height: 18.75em; width: 14em; padding:1.875em; border-radius: 0.3125em; }
 
 #Cursos_destacados .destacados h3{color: #fff; font-size:1.875em; font-weight: 500; margin: 0;}
 #Cursos_destacados .destacados p{font-size: 0.625em; color: #acacac; line-height: 1.25em;}
@@ -146,7 +148,7 @@ cursor: pointer;}
 @media screen and (max-width: 47em){
     main{width: 100%;}
     /* Titulo */
-    #Titulo{text-align: center; color: #fff; margin:15.625em 0;}
+    #Titulo{text-align: center; color: #fff; margin:5em 0;}
     #Titulo h1{font-size:2.375em; margin:0 0 0.875em}
     #Titulo p{font-size: 1.25em;}
     #Titulo button{font-size: 1em;}
@@ -164,36 +166,52 @@ cursor: pointer;}
     #Categorias a {font-size: 90%;}
 
     /*  Carrousel */
-    #carrousel img { border-radius: 0.625em; width: 60%; height: auto;}
-    #carrousel { display: flex; justify-content: center; width: 100%;}
+    #carrousel {  width: 70%; }
+
 
     /* Exp aprendizaje */
+
     #Experiencia_aprendizaje{ width: 100%;}
     #Experiencia_aprendizaje { font-size: 80%; }
-    #Experiencia_aprendizaje img{border-radius: 0.625em ; height: 10.75em;}
-    
+    #Experiencia_aprendizaje {margin: 1em 0;}
+    #Experiencia_aprendizaje img{border-radius: 0.625em ; height: auto;}
+    #Experiencia_aprendizaje{display: flex; justify-content: space-between; margin: 9.375em 0; align-items: center; flex-direction: column;}
+    #Experiencia_texto{ width: 100%;}
+    #Experiencia_aprendizaje #img_inicio1 {width: 60%;}
+
 
     /* Career Advisor */
     
-    #Carrer_advisor{font-size: 80%;}
-    #Carrer_advisor img{border-radius: 0.625em ; height: 10.75em;}
+    #Carrer_advisor{font-size: 80%; margin: 2em 0;}
+    #Carrer_advisor img{border-radius: 0.625em ; height: auto;}
+
+    #Carrer_advisor{display: flex; justify-content: space-between; margin: 9.375em 0; align-items:center; flex-direction: column-reverse;}
+    #Carrer_advisor #img_inicio2{ width: 60%; }
+    #Carrer_texto{width: 100%;}
 
     /* Garantia */
     #Garantia{font-size: 80%;}
-    #Garantia img{border-radius: 0.625em ; height: 10.75em;}
+    #Garantia img{border-radius: 0.625em ; height: auto;}
+
+    #Garantia{display: flex; justify-content: space-between; margin: 9.375em 0; align-items: center; flex-direction: column;}
+    #Garantia_texto{width: 100%;}
+    #img_inicio3{width: 60%;}
+
 
     /* Pasos a seguir */
     #Pasos{ font-size: 80%;}
 
     /* Cursos Destacados */
-    #Destacados {font-size: 90%;}
+    #Destacados {font-size: 90%; margin-bottom: 0;}
     #Destacados h2{ margin-bottom: 1em;}
-    #Cursos_destacados {display: grid; grid-template-areas: "a b" "c d"; grid-template-columns: 1fr 1fr; grid-row-gap: 1em; grid-column-gap: 1em; grid-template-rows: 1fr 1fr; justify-items: center;}
-    .dest_a{grid-area: a;}
+    #Cursos_destacados {display: flex; flex-direction: column; justify-content: space-between; align-items: center;}
+    
+    /* #Cursos_destacados {display: grid; grid-template-areas: "a b" "c d"; grid-template-columns: 1fr 1fr; grid-row-gap: 1em; grid-column-gap: 1em; grid-template-rows: 1fr 1fr; justify-items: center;} */
+    /* .dest_a{grid-area: a;}
     .dest_b{grid-area: b;}
     .dest_c{grid-area: c;}
-    .dest_d{grid-area: d;}
-    #Cursos_destacados .destacados {height: 20em; width: 93%; padding:1.875em; border-radius: 1em;  padding-top: 3em;}
+    .dest_d{grid-area: d;} */
+    #Cursos_destacados .destacados {height: 20em; width: 20em; padding:1.875em; border-radius: 1em;  padding-top: 3em; margin-bottom: 2em;}
     #Cursos_destacados .destacados p{font-size: 1em;line-height: 1.25em;}
 
     #Cursos_destacados .destacados button {height: 2em; width: 100%;}
@@ -204,11 +222,11 @@ cursor: pointer;}
 
 
     /* Medios de pago */
-    #Medios_pago{  display: flex; justify-content: space-around; flex-direction: row; height: 9.375em}
+    #Medios_pago{  display: flex; justify-content: space-around; flex-direction: row; height: 9.375em; margin: 2em 0 3em;}
 
     #texto {display: flex;flex-direction: row; justify-content: end; align-items: center; width: 60%;}
 
-    #img_pago{display: grid; width:30%; grid-template-areas: "pago_1 pago_2 pago_3" "pago_4 pago_5 pago_7" "pago_6 pago_6 pago_6"; justify-items: center; grid-template-columns: 1fr 1fr 1fr; grid-template-rows: 20% 20% 20%; justify-content: center; align-content: center;} 
+    #img_pago{display: grid; width:30%; grid-template-areas: "pago_1 pago_2 pago_3" "pago_4 pago_5 pago_7" "pago_6 pago_6 pago_6"; justify-items: center; grid-template-columns: 30% 30% 30%; grid-template-rows: 20% 20% 20%; justify-content: center; align-content: center;} 
     #img_pago img{height: 1em; }
 
     #pago_1{grid-area: pago_1;}
@@ -233,7 +251,7 @@ cursor: pointer;}
     #est_4{grid-area: est4;}
     #Estadistica div{height:10em; width:100%;}
     #Estadistica h2{line-height: 1.125em;height:.5em; font-size: 2em;}
-    #Estadistica p{font-size: 1.5em;}
+    #Estadistica p{font-size: 1.2em;}
 }
 
 
@@ -257,8 +275,7 @@ cursor: pointer;}
     #Categorias a {font-size: 100%;}
 
     /*  Carrousel */
-    #carrousel img { border-radius: 0.625em; width: 60%; height: auto;}
-    #carrousel { display: flex; justify-content: center; width: 100%;}
+    #carrousel{width: 80%;}
 
     /* Experiencia aprendizaje */
     #Experiencia_aprendizaje{ width: 100%;}
