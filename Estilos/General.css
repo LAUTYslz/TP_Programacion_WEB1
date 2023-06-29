@@ -86,8 +86,13 @@ footer {width: 80%; margin: auto;}
     #menu {display: flex; width: auto; height: auto;  align-items: center;}
     #desplegable{display: block; height: 1.5em;}
     
-    nav #nav_cat{display: none; justify-content: space-around; width: 43.75em; align-items:center;}
+    nav #nav_cat{display: flex; justify-content: space-around;flex-direction: column; width: 100%; align-items:center; position: absolute;  left: 0;top: 5em; background-color: #DC8DF2; padding: 10px;max-height: 0; overflow: hidden; transition: max-height 0.3s ease; margin: 0; padding: 0;}
     #nav_cat{width: 0.5em;}
+    #nav_cat.hidden{ 
+        max-height: 100vh;
+        /* display: block; */
+    }
+    #nav_cat a{display: block; padding: 5px 0;}
     
 
     #carrito_buscador{justify-content: end;}
@@ -126,11 +131,23 @@ footer {width: 80%; margin: auto;}
        font-size: 80%;
    }
     /*--------------------------header--------------------------------  */
-    nav{display: flex; flex-direction: row; justify-content: center;}
-    .desplegable{display: block; background-size: contain;}
-    .desplegable:hover{ cursor: pointer;}
-    #nav_cat {display: none; width: 0;}
-    #nav_cat a{display: none;}
+    nav{display: flex; flex-direction: row; justify-content: space-around;}
+    /* .desplegable{display: block; background-size: contain;}
+    .desplegable:hover{ cursor: pointer;} */
+    nav span{font-size: 2.5em; line-height: 1em;}
+    #menu:hover{ cursor: pointer;}
+    #menu {display: flex; width: auto; height: auto;  align-items: center;}
+
+    nav #nav_cat{display: flex; justify-content: space-around;flex-direction: column; width: 100%; align-items:center; position: absolute;  left: 0;top: 5em; background-color: #DC8DF2; padding: 10px;max-height: 0; overflow: hidden; transition: max-height 0.3s ease; margin: 0; padding: 0;}
+    #nav_cat{font-size: 1.4em;}
+    #nav_cat.hidden{ 
+        max-height: 100vh;
+        /* display: block; */
+    }
+    #nav_cat a{display: block; padding: .5em 0;}
+
+    /* #nav_cat {display: none; width: 0;}
+    #nav_cat a{display: none;} */
     /* .lupa{display: block;} */
     /* #carrito_buscador input{ display: none;} */
 
