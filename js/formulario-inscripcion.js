@@ -15,6 +15,10 @@ let inputs = document.querySelectorAll(".inputs");
 
 let modal = document.querySelector(".modal");
 
+let contador = document.querySelector("#contador");
+let cantidadDeCursosObtenidos = sessionStorage.getItem("cantidadDeCursosObtenidos");
+contador.innerHTML = cantidadDeCursosObtenidos;
+
 
 quitarValores.addEventListener("click", (e)=> {
     input.forEach((item)=>{ 
