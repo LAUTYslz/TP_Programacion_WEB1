@@ -51,9 +51,6 @@ function funcionInscripcion(e, formulario_inscripcion__div){
 
       item.childNodes.forEach((itemInput)=>{
 
-       
-        
-
         if(itemInput.id=="nombre"){
             valorNombre = itemInput.value;
         }

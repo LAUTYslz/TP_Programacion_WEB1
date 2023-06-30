@@ -49,14 +49,15 @@ p{
     font-weight: bold;
 }
 
-#informacion-curso .botones {
+.botones {
     display: flex;
     justify-content: space-around;
     height: 2.5em;
     margin-top: 4.375em;
 }
-.NaNem{font-size: 1.5625em;}
-.NaNem{padding: 0.5em;}
+
+/* .NaNem{font-size: 1.5625em;}
+.NaNem{padding: 0.5em;} */
 
 #informacion-curso__inscribirse {
 
@@ -66,6 +67,27 @@ p{
 
     border-radius: 0.625em;
     width: 7.37em;
+    text-align: center;
+    font-size: 1.55em;
+    line-height: 1.7em;
+
+    cursor: pointer;
+}
+
+.boton_continuar_inscripcion{
+    display: flex;
+    justify-content: space-around;
+    height: 2.5em;
+    margin: 2em;
+}
+
+#continuar_inscripcion{
+    text-decoration: none;
+    color: #1F1F22;
+    background-color: #E2F26B;  
+
+    border-radius: 0.625em;
+    width: 11.3em;
     text-align: center;
     font-size: 1.55em;
     line-height: 1.7em;
@@ -112,7 +134,7 @@ p{
 
 .modal{
     margin: auto;
-    height: 25em;
+    
     width: 50em;
     display: flex;
     flex-direction: column;
@@ -476,6 +498,17 @@ spam{
 
     #conteiner-datos-profesor {
         width: 117%;
+    }
+
+     /*Acordeon*/
+     #contenidos-por-clase {
+        max-width: 100%;
+    }
+
+    /* profesor */
+    #informacion-del-profesor {
+        margin: auto;
+        width: 100%;
     }
 
 }

@@ -3,7 +3,6 @@ let modal = document.querySelector(".section-modal");
 
 let iconoCerrar = document.querySelector(".icono_cerrar");
 
-
 inscribirse.addEventListener("click",()=>{
     modal.classList.remove("ocultar");
 });
@@ -11,7 +10,6 @@ inscribirse.addEventListener("click",()=>{
 iconoCerrar.addEventListener("click", ()=>{
   modal.classList.add("ocultar");
 });
-
 
 
 $(".acordeon").on("click", ".acordeon-cabecera", function() {
