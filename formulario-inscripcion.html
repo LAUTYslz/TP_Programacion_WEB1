@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="Estilos/General.css">
     <link rel="stylesheet" href="Estilos/formulario-inscripcion.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="Estilos/General.css">
+
     <title>Inscripción</title>
 </head>
 <body>
@@ -31,7 +32,7 @@
             <img class="lupa" src="/Multimedia/inicio/lupa.png" alt="">
             <div id="carrito">
                 <img src="Multimedia/inicio/svg/carrito.svg" alt="">
-                <p>0</p>
+                <p id="contador">0</p>
             </div>
         </div>
         <!-- <form action=""></form> -->
@@ -39,6 +40,12 @@
     </header>
     <hr>
     <main>
+        <section id="lista_cursos" class="mostrar">
+            <h2>Cursos obtenidos</h2>
+            <div id="mensajeLista">
+
+            </div>
+        </section>
         <section class="seccion_inscripcion">
             <article class="titulos">
                 <h1>Título del Curso</h1>
@@ -161,5 +168,5 @@
     <script src="https://kit.fontawesome.com/a52b387a60.js" crossorigin="anonymous"></script>
     <script src="js/formulario-inscripcion.js"></script>
     <script src="js/menu.js"></script>
-</body>
+    <script src="js/lista de cursos.js"></script></body>
 </html>

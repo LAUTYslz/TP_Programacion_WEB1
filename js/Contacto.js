@@ -56,7 +56,7 @@ function validar(){
 // consulta
 
 const consulta = document.getElementById('consulta');
-const contador = document.getElementById('contador');
+const contador = document.getElementById('contador_texto');
 
 consulta.addEventListener('input', function() {
   const caracteresIngresados = consulta.value.length;

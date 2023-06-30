@@ -29,7 +29,7 @@
                 <img class="lupa" src="/Multimedia/inicio/lupa.png" alt="">
                 <div id="carrito">
                     <img src="Multimedia/inicio/svg/carrito.svg" alt="">
-                    <p>0</p>
+                    <p id="contador">0</p>
                 </div>
             </div>
             <!-- <form action=""></form> -->
@@ -38,6 +38,12 @@
         </header>
         <!-- ------------------------------MAIN------------------------------ -->
         <main>
+            <section id="lista_cursos" class="mostrar">
+                <h2>Cursos obtenidos</h2>
+                <div id="mensajeLista">
+    
+                </div>
+            </section>
             <h1>Contactános</h1>
 
             <section id="formulario">
@@ -61,7 +67,7 @@
                     <input type="text" name="telefono" id="telefono" required>
                     <label for="consulta">Consulta</label>
                     <textarea name="consulta" id="consulta" cols="30" rows="10" maxlength="1000"></textarea>
-                    <p id="contador"></p>
+                    <p id="contador_texto"></p>
                     <div id="mensaje" class="error">
                 
                     </div>
@@ -138,5 +144,6 @@
 
         <script src="js/Contacto.js"></script>
         <script src="js/menu.js"></script>
+        <script src="js/lista de cursos.js"></script>
     </body>
 </html>

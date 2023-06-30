@@ -42,11 +42,16 @@ nav a{font-size: 1.25em; color: #fff;}
 #carrito_buscador{ display: flex; flex-direction: row; justify-content: space-around; align-items: center; width: 25%;}
 #carrito{ display: flex;flex-direction: row; align-items: center;}
 #carrito img {height: 2.5em;}
-#carrito p {color: #fff; background-color: #DC8DF2; line-height: 1.875em; border-radius: 50%; font-size: 1.626em; height: 1.626em; width: 1.626em; text-align: center;}
+#carrito p {color: #fff; background-color: #DC8DF2; line-height: 1.875em; border-radius: 50%; font-size: 1.626em; height: 1.626em; width: 1.626em; text-align: center; cursor: pointer;}
 
 /*---------------------------------- MAIN-------------------------------------*/
 
 main{width: 80%; margin: auto;}
+
+/* Lista de cursos */
+#lista_cursos{width: 90%; height: auto; padding: 3em 1em; border: 1px solid #e2f26be6; margin: auto; display: none;}
+#lista_cursos h2{text-align: center;}
+/* #lista_cursos .mostrar{display: block;} */
 
 /* --------------------------------FOOTER------------------------------------ */
 /* footer hr{width: 100% !important;} */
@@ -86,7 +91,7 @@ footer {width: 80%; margin: auto;}
     #menu {display: flex; width: auto; height: auto;  align-items: center;}
     #desplegable{display: block; height: 1.5em;}
     
-    nav #nav_cat{display: flex; justify-content: space-around;flex-direction: column; width: 100%; align-items:center; position: absolute;  left: 0;top: 5em; background-color: #DC8DF2; padding: 10px;max-height: 0; overflow: hidden; transition: max-height 0.3s ease; margin: 0; padding: 0;}
+    nav #nav_cat{display: flex; justify-content: space-around;flex-direction: column; width: 100%; align-items:center; position: absolute;  left: 0;top: 5em; background-color: #DC8DF2; padding: 10px;max-height: 0; overflow: hidden; transition: max-height 0.3s ease; margin: 0; padding: 0; z-index: 2;}
     #nav_cat{width: 0.5em;}
     #nav_cat.hidden{ 
         max-height: 100vh;

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="Estilos/General.css">
     <link rel="stylesheet" href="Estilos/detalles-del-curso.css">
+    <link rel="stylesheet" href="Estilos/General.css">
+
     <title>Detalles del curso de java</title>
 </head>
 <body>
@@ -28,7 +29,7 @@
           <img class="lupa" src="/Multimedia/inicio/lupa.png" alt="">
           <div id="carrito">
               <img src="Multimedia/inicio/svg/carrito.svg" alt="">
-              <p>0</p>
+              <p id="contador">0</p>
           </div>
       </div>
       <!-- <form action=""></form> -->
@@ -36,6 +37,12 @@
       </header>
 <hr>
   <main>
+   <section id="lista_cursos" class="mostrar">
+      <h2>Cursos obtenidos</h2>
+      <div id="mensajeLista">
+
+      </div>
+  </section>
 
     <section id="descripcion-del-curso">
       
@@ -755,5 +762,6 @@
     <script src="js/detalles-curso-java.js"></script>
     <script src="https://kit.fontawesome.com/a52b387a60.js" crossorigin="anonymous"></script>
     <script src="js/menu.js"></script>
+    <script src="js/lista de cursos.js"></script>
 </body>
 </html>
