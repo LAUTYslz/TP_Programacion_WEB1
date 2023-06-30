@@ -65,7 +65,7 @@ h1{
 
 .conteiner-giftCard img{width: 100%; height: 100%;}
 
-.giftCardPara{/* position: absolute;      top: 4.9375em; left: 7.3125em; */}
+/* .giftCardPara{position: absolute;      top: 4.9375em; left: 7.3125em;} */
 .nombreDestinatario{text-align: center;}
 .precio{background-color: black; padding: 0.3125em; margin:0em;}
 
