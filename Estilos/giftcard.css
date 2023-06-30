@@ -55,7 +55,7 @@ h1{font-size: 3.125em; font-weight: bold; margin-bottom: 1.25em;max-width: 8em;}
 
 .conteiner-giftCard img{width: 100%; height: 100%;}
 
-.giftCardPara{/* position: absolute;      top: 4.9375em; left: 7.3125em; */}
+/* .giftCardPara{position: absolute;      top: 4.9375em; left: 7.3125em;} */
 .nombreDestinatario{text-align: center;}
 .precio{background-color: black; padding: 0.3125em; margin:0em;}
 
