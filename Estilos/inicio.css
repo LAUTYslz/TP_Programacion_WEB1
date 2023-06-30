@@ -112,11 +112,11 @@ cursor: pointer;}
 /* Cursos destacados */
 #Destacados {margin-top: 9.375em; margin-bottom: 6.25em;}
 
-#Destacados h2{color: #E2F26B; margin-bottom: 3.125em;}
+#Destacados h2{color: #E2F26B; margin-bottom: 1.125em;}
 
-#Cursos_destacados {display: flex; justify-content: space-between;}
+#Cursos_destacados {display: flex; justify-content: space-around;}
 
-#Cursos_destacados .destacados {background-color: #2B2C32; height: 18.75em; width: 14em; padding:1.875em; border-radius: 0.3125em; }
+#Cursos_destacados .destacados {background-color: #2B2C32; height: 22em; width: 16em; padding:1.875em; border-radius: 0.3125em; }
 
 #Cursos_destacados .destacados h3{color: #fff; font-size:1.875em; font-weight: 500; margin: 0;}
 #Cursos_destacados .destacados p{font-size: 0.625em; color: #acacac; line-height: 1.25em;}
@@ -124,12 +124,13 @@ cursor: pointer;}
 #Cursos_destacados .destacados img {height: 0.625em;}
 
 #Cursos_destacados .destacados button {height: 3.125em; width: 100%; margin-left: auto; margin-right: auto; background-color: #534e54; border: none; border-radius: 0,3125em; color: #E2F26B;}
+.boton_precio{margin-bottom: 1em;}
 #Cursos_destacados .destacados button:hover {background-color: #39363a; cursor: pointer; transition: 0.4s;}
 #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
 #Cursos_destacados .destacados .boton_precio a {color: #E2F26B;}
 
-.datos{display: flex; flex-direction:column; justify-content:center; height: 40%;}
-.precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+.datos{display: flex; flex-direction:column; justify-content:center; height: 30%;}
+.precio{display: flex; flex-direction:column; justify-content: end; height: 30%; padding-bottom: 10%;}
 
 /* Medios de pago */
 #Medios_pago{ background-color: #2B2C32 ; margin: 7.5em 0; display: flex; justify-content: center; flex-direction: row; height: 9.375em}
@@ -211,14 +212,14 @@ cursor: pointer;}
     .dest_b{grid-area: b;}
     .dest_c{grid-area: c;}
     .dest_d{grid-area: d;} */
-    #Cursos_destacados .destacados {height: 20em; width: 20em; padding:1.875em; border-radius: 1em;  padding-top: 3em; margin-bottom: 2em;}
+    #Cursos_destacados .destacados {height: 23em; width: 20em; padding:1.875em; border-radius: 1em;  padding-top: 3em; margin-bottom: 2em;}
     #Cursos_destacados .destacados p{font-size: 1em;line-height: 1.25em;}
 
     #Cursos_destacados .destacados button {height: 2em; width: 100%;}
     #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
 
     .datos{display: flex; flex-direction:column; justify-content:center; height: 30%;}
-    .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+    .precio{display: flex; flex-direction:column; justify-content: end; height: 30%; padding-bottom: 10%;}
 
 
     /* Medios de pago */
@@ -302,14 +303,14 @@ cursor: pointer;}
     .dest_b{grid-area: b;}
     .dest_c{grid-area: c;}
     .dest_d{grid-area: d;}
-    #Cursos_destacados .destacados {height: 20em; width: 93%; padding:1.875em; border-radius: 1em;  padding-top: 3em;}
+    #Cursos_destacados .destacados {height: 28em; width: 93%; padding:2em 2em; border-radius: 1em;  padding-top: 3em;}
     #Cursos_destacados .destacados p{font-size: 1em;line-height: 1.25em;}
 
     #Cursos_destacados .destacados button {height: 3em; width: 100%; font-size: 1.3em;}
     #Cursos_destacados .destacados .boton_precio {display: flex; justify-content: center; height: 20;}
 
     .datos{display: flex; flex-direction:column; justify-content:center; height: 30%;}
-    .precio{display: flex; flex-direction:column; justify-content: end; height: 40%; padding-bottom: 10%;}
+    .precio{display: flex; flex-direction:column; justify-content: end; height: 30%; padding-bottom: 10%;}
 
     /* Medios de pago */
     #Medios_pago{  display: flex; justify-content: space-around; flex-direction: row; height: 9.375em}

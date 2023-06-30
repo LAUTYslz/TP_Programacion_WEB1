@@ -8,12 +8,24 @@ h1{color: #fff; font-size: 5em; margin: 1em 0;}
 form{display: flex; flex-direction: column; width: 40%;}
 
 #formulario input{ width: 70%; height: 3em; border-radius: 0.625em; margin-bottom: 1.875em;}
-#formulario button{ width: 30%; height: 2em; border-radius: 0.625em; color: black; font-size: 1.25em; margin-top: 1.875em; background-color: #E2F26B;}
-#formulario button:hover{cursor: pointer; background-color: #E2F26B; transition: 0.5s; color: #DC8DF2;}
+#formulario #button{ width: 30%; height: 2em; border-radius: 0.625em; color: black; font-size: 1.25em; margin-top: 1.875em; background-color: #E2F26B;}
+#formulario #button:hover{cursor: pointer; background-color: #E2F26B; transition: 0.5s; color: #DC8DF2;}
 
 label { font-size: 1.5625em; color: #DC8DF2;}
 
 textarea{border-radius: 0.625em;}
+
+
+/* Popup */
+#contenedor_pop{display: flex; justify-content: center; align-items: center;}
+.hidden{display: none;}
+#popup{border: 3px solid #E2F26B; text-align: center; width: 30%;}
+#popup button{
+
+     width: 30%; height: 2em; border-radius: 0.625em; color: black; font-size: 1.25em; margin-top: 1.875em; background-color: #E2F26B;
+}
+#popup button:hover{cursor: pointer;transition: 0.5s;}
+#mensaje p{ font-size: 1em; color: orange;}
 
 /* Mapa */
 
@@ -36,6 +48,10 @@ h2{color: #E2F26B;}
     #formulario input{ width: 70%; height: 2em; border-radius: 0.625em; }
     #formulario textarea{ width: 70%; height: 4em;}
 
+    /* Popup */
+    #popup{width: 90%;}
+    #mensaje p{ font-size: 1em; color: orange;}
+
     /* Mapa */
 
     h2{color: #E2F26B;}
@@ -54,6 +70,10 @@ h2{color: #E2F26B;}
      #formulario form{width: 100%;}
      #formulario input{ width: 70%; height: 2em; border-radius: 0.625em; }
      #formulario textarea{ width: 70%; height: 4em;}
+
+    /* Popup */
+    #popup{width: 50%;}
+    #mensaje p{ font-size: 1em; color: orange;}
  
      /* Mapa */
  
