@@ -5,6 +5,7 @@ let botonesComprar = document.querySelectorAll('.boton_comprar');
 let btnEntendido= document.querySelector("#btnEntendido");
 
 
+let botonInscribirse = document.querySelector("#informacion-curso__inscribirse");
 
 function actualizarListaCursos() {
     if (parseInt(contador_curso.textContent) === 0) {
@@ -73,6 +74,7 @@ window.addEventListener('load', function() {
     actualizarListaCursos();
 });
 
+
 botonesComprar.forEach((boton)=>{
     boton.addEventListener("click",()=>{
         const curso = boton.parentElement;
@@ -94,3 +96,23 @@ botonesComprar.forEach((boton)=>{
         guardarCursos();
     })
 })
+
+
+botonInscribirse.addEventListener("click",()=>{
+    const curso = botonInscribirse.parentElement.parentElement.querySelector("h1").textContent;
+    cursos.push(curso);
+    cantidadCursos++;
+
+    contador_curso.textContent=cantidadCursos.toString();
+    actualizarListaCursos();
+
+    mensajeLista.textContent="";
+    cursos.forEach((curso) =>{
+        const nuevoCurso = document.createElement('p');
+        nuevoCurso.textContent=curso;
+        mensajeLista.appendChild(nuevoCurso);
+    });
+
+    guardarCursos();
+    
+});
