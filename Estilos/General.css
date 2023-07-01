@@ -53,9 +53,10 @@ main{width: 80%; margin: auto; margin-top: 120px;}
 .arreglos-menu-fijo{margin-top: 0;}
 /* Lista de cursos */
 #lista_cursos{width: 50%; height: auto; padding: 0em 1em 1em; border: 1px solid #e2f26be6; margin: auto; display: none; border-radius: 20px; position: fixed; left: 25%; top: 25%; background-color: #1F1F22; z-index: 5; justify-content: center; align-items: center; flex-direction: column;}
+#titulo_lista {display: flex; justify-content: space-between; width: 100%; align-items: center;} 
 #lista_cursos h2{text-align: center; color: #DC8DF2; font-size: 2em;}
 #lista_cursos p{margin: 0.5em 0; font-size: 1em;}
-#lista_cursos button{border-radius: 10px; background-color: #1F1F22; text-decoration: none; border: 2px solid #e2f26be6; color: #DC8DF2; font-size: 1.2em; margin-top: 1em; cursor: pointer; width: 30%;}
+#lista_cursos button{border-radius: 10px; background-color: #1F1F22; text-decoration: none; border: 2px solid #e2f26be6; color: #DC8DF2; font-size: 1.2em; cursor: pointer; width: 20%;}
 /* #lista_cursos .mostrar{display: block;} */
 
 /* --------------------------------FOOTER------------------------------------ */
@@ -116,6 +117,10 @@ footer {width: 80%; margin: auto;}
     /* -----------------------Main----------------------------- */
     main{
         width: 90%; margin-top: 5em;
+    }
+    #titulo_lista{flex-direction: column;}
+    #lista_cursos button{
+        width: 80%; margin-bottom: 1em;
     }
     
 
