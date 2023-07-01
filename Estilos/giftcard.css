@@ -180,3 +180,8 @@ span{font-size: 1.6em;}
     body{font-size: 85% !important ;}
 }
 
+/* movil */
+@media screen and (max-width:30em) {
+    body{font-size: 60% !important ;}
+}
+
